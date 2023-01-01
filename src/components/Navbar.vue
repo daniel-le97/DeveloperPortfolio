@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-3 fixed-top">
+  <nav  id="navBar" class="navbar navbar-expand-lg navbar-dark bg-custom px-3 fixed-top ">
     <div class="d-flex me-5">
       <p class="mb-0 font-1 fs-5">Tung Le</p>
       <p class="mb-0 ms-4 font-1 fs-5">SoftWare Developer</p>
@@ -35,8 +35,29 @@
 <script>
 import Login from "./Login.vue";
 import ProgressBar from "./ProgressBar.vue";
+import { onMounted } from "vue";
 export default {
   setup() {
+onMounted(()=>{
+hideOnScroll()
+})
+       function hideOnScroll() {
+      let nav = document.querySelector("#navBar");
+      let prevScrollpos = window.scrollY;
+      console.log(nav);
+      window.onscroll = function () {
+        let currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos) {
+          nav.style.top = "0";
+             nav.classList.add('opacity-0')
+          
+        } else {
+          nav.style.top = "-250px";
+             nav.classList.add('opacity-0')
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    }
     return {};
   },
   components: { Login, ProgressBar },

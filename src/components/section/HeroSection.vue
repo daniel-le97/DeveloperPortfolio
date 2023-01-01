@@ -28,18 +28,19 @@
     <ParticleComponent />
     <div class="row justify-content-between">
       <div id="heroText2" class="col-md-6 hero-text-2">
-        <p 
-         v-motion-slide-bottom
+        <p
+          v-motion-slide-bottom
           :delay="300"
-        class="text-start display-6 ms-5 font-1 mb-0">creative</p>
-        <p 
-         v-motion-slide-bottom
-          :delay="300"
-        class="font-1 display-7 mb-0">Designer  <b class="display-6 ">&</b></p>
-        <p 
-         v-motion-slide-bottom
-          :delay="300"
-        class="font-1 display-7">Developer</p>
+          class="text-start display-6 ms-5 font-1 mb-0"
+        >
+          creative
+        </p>
+        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 mb-0">
+          Designer <b class="display-6">&</b>
+        </p>
+        <p v-motion-slide-bottom :delay="300" class="font-1 display-7">
+          Developer
+        </p>
       </div>
       <div class="col-md-6 text-center">
         <h1 id="heroText" class="text-light display-1 hero-text">
@@ -69,7 +70,7 @@ export default {
     function paralaxx1() {
       let text1 = document.getElementById("heroText");
       let text2 = document.getElementById("heroText2");
-      console.log(text1);
+      // console.log(text1);
       let prevScrollpos = window.scrollY;
       console.log(prevScrollpos);
       window.onscroll = function () {
@@ -85,15 +86,15 @@ export default {
           // text1.classList.remove('test1')
           // text1.classList.add('test')
           text1.style.transform = `translateY(${currentScrollPos}px)`;
-             text2.style.transform = `translateY(-${currentScrollPos}px)`;
+          text2.style.transform = `translateY(-${currentScrollPos}px)`;
         }
 
-        if (currentScrollPos > 300) {
+        if (currentScrollPos > 350) {
           // console.log('test');
           text1.style.filter = "opacity(0)";
         }
 
-        if (currentScrollPos < 250) {
+        if (currentScrollPos < 350) {
           text1.style.filter = "opacity(1)";
         }
 
@@ -109,13 +110,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-text-2{
+.hero-text-2 {
   transition: all 0.25s ease;
 }
-.hero-text{
-z-index: 9999;
+.hero-text {
+  z-index: 9999;
 }
-.display-7{
+.display-7 {
   font-size: 10rem;
 }
 #heroText {
