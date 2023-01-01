@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about py-5 mt-0 section-bubble1">
+  <section id="about" class="about py-5 mt-0 section-bubble1 text-light font-1">
     <div class="container">
       <div class="section-title">
         <h1

@@ -19,7 +19,9 @@
         class="progress bg-transparent"
       />
 
-      {{ percent }}
+<p class="position-absolute start-0 top-0 font-1 text-success">
+        {{ percent }}
+</p>
     </div>
   </div>
 </template>
@@ -50,6 +52,8 @@ AppState.percent = percent
       document.getElementById(
         "progress"
       ).style.transform = `translateX(${percent})`;
+
+      
     }
 
     watchEffect(() => {});

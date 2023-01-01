@@ -65,7 +65,10 @@ form:invalid button[type="submit"] {
 }
 
 
-
+.container{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
 
 $spacer-height: 20vw;
@@ -129,7 +132,7 @@ $section5-bg-color: #333333;
 
 .section-bubble1
 {
-  @include section-bubble-with-colors(a, $section1-bg-color, $section2-bg-color);
+  @include section-bubble-with-colors(a, $section5-bg-color, $section2-bg-color);
 }
 
 .section-bubble2
