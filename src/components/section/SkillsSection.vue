@@ -1,5 +1,5 @@
 <template>
-  <section id="skills">
+  <section id="skills  " class="py-5 section-bubble2">
     <div class="container">
       <div class="section-title">
         <h1>Skills & Experience</h1>
@@ -209,6 +209,6 @@ img{
 }
 
 img:hover{
-  transform: rotate(4deg);
+  transform: rotate(8deg);
 }
 </style>

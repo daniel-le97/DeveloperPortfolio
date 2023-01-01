@@ -26,13 +26,27 @@
     class="container-fluid hero-image text-center d-flex justify-content-center align-items-center"
   >
     <ParticleComponent />
-    <div class="row">
-      <div class="col-md-example text-center">
+    <div class="row justify-content-between">
+      <div id="heroText2" class="col-md-6 hero-text-2">
+        <p 
+         v-motion-slide-bottom
+          :delay="300"
+        class="text-start display-6 ms-5 font-1 mb-0">creative</p>
+        <p 
+         v-motion-slide-bottom
+          :delay="300"
+        class="font-1 display-7 mb-0">Designer  <b class="display-6 ">&</b></p>
+        <p 
+         v-motion-slide-bottom
+          :delay="300"
+        class="font-1 display-7">Developer</p>
+      </div>
+      <div class="col-md-6 text-center">
         <h1 id="heroText" class="text-light display-1 hero-text">
           Learn
           <b v-motion-slide-bottom :delay="600">Anything. </b>
-          <b v-motion-slide-bottom :delay="1200">Anytime. </b>
-          <b v-motion-slide-bottom :delay="1800">Anywhere.</b>
+          <b v-motion-slide-bottom :delay="1000">Anytime. </b>
+          <b v-motion-slide-bottom :delay="1500">Anywhere.</b>
         </h1>
       </div>
     </div>
@@ -54,6 +68,7 @@ export default {
 
     function paralaxx1() {
       let text1 = document.getElementById("heroText");
+      let text2 = document.getElementById("heroText2");
       console.log(text1);
       let prevScrollpos = window.scrollY;
       console.log(prevScrollpos);
@@ -64,11 +79,13 @@ export default {
           // text1.classList.add('test1')
           // text1.classList.remove('test')
           text1.style.transform = `translateY(${currentScrollPos}px)`;
+          text2.style.transform = `translateY(-${currentScrollPos}px)`;
           // text1.style.transform = "translateY(0deg)"
         } else {
           // text1.classList.remove('test1')
           // text1.classList.add('test')
           text1.style.transform = `translateY(${currentScrollPos}px)`;
+             text2.style.transform = `translateY(-${currentScrollPos}px)`;
         }
 
         if (currentScrollPos > 300) {
@@ -92,6 +109,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hero-text-2{
+  transition: all 0.25s ease;
+}
+.hero-text{
+z-index: 9999;
+}
+.display-7{
+  font-size: 10rem;
+}
 #heroText {
   transition: all 0.5s ease;
 }
@@ -122,7 +148,7 @@ export default {
   height: 100vh;
   /* always scale the image to the appropriate size of your screen */
   background-size: cover;
-  background-image: url(https://cdn.wallpapersafari.com/57/43/h2oSbV.jpg);
+  background-image: url(https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg);
   background-position: center;
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed;

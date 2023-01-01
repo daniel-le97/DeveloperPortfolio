@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolio">
+  <section id="portfolio" class="py-5 section-bubble3">
     <div class="container">
       <div class="section-title">
         <h1>My Projects</h1>

@@ -6,7 +6,7 @@ export const AppState = reactive({
   /** @type {import('./models/Account.js').Account} */
   account: {},
 
-
+percent:0,
   portfolioImages:[
     '../../assets/img/portfolio/InspireSS.png',
     '../../assets/img/portfolio/DimensionMiner.png',

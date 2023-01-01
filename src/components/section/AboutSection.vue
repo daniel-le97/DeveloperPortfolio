@@ -1,14 +1,19 @@
 <template>
-  <section id="about" class="about pt-2">
+  <section id="about" class="about py-5 mt-0 section-bubble1">
     <div class="container">
       <div class="section-title">
-        <h1>About me</h1>
+        <h1
+         v-motion-slide-visible-once-bottom
+          :delay="300"
+        >About me</h1>
       
       </div>
 
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
+        <div class="col-lg-4" >
           <img
+           v-motion-slide-visible-once-bottom
+          :delay="300"
             src="../../assets/img/Tungle/Tung Le.4.jpg"
             class="img-fluid rounded profileImg"
             alt=""
@@ -18,7 +23,10 @@
         <div
           class="col-lg-8 pt-4 pt-lg-0 content px-md-5 d-flex align-items-center"
         >
-          <p class="px-md-5 aboutmeText text-start fs-5">
+          <p 
+           v-motion-slide-visible-once-bottom
+          :delay="300"
+          class="px-md-5 aboutmeText text-start fs-5">
             Hello my name is Tung Le and welcome to my landing page! I'm a
             full-stack software developer with a passion for creativity, problem
             solving and learning something new every day. I immediately fell in

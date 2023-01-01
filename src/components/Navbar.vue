@@ -1,6 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg-dark px-3 fixed-top">
-
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-3 fixed-top">
+    <div class="d-flex me-5">
+      <p class="mb-0 font-1 fs-5">Tung Le</p>
+      <p class="mb-0 ms-4 font-1 fs-5">SoftWare Developer</p>
+    </div>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,28 +18,32 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <li>
-          <router-link :to="{ name: 'Home' }" class="btn text-success lighten-30 selectable text-uppercase">
+          <router-link
+            :to="{ name: 'Home' }"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
             Home
           </router-link>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
-   
     </div>
+    <ProgressBar />
   </nav>
 </template>
 
 <script>
-import Login from './Login.vue'
+import Login from "./Login.vue";
+import ProgressBar from "./ProgressBar.vue";
 export default {
   setup() {
-    return {}
+    return {};
   },
-  components: { Login }
-}
+  components: { Login, ProgressBar },
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a:hover {
   text-decoration: none;
 }
@@ -50,11 +57,14 @@ a:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
-@media screen and (min-width: 768px) {
-  nav {
+nav {
+  @media screen and (min-width: 768px) {
     height: 64px;
   }
 }
 
+.bg-custom{
+  background-color: rgba(51, 46, 46, 0.685);
+  backdrop-filter: blur(8px);
+}
 </style>

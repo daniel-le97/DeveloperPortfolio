@@ -1,11 +1,13 @@
 <template>
-<div class="container">
+<section class="py-5 section-bubble4">
+  <div class="container">
   <div class="row">
     <div class="col-md-example">
-      
+
     </div>
   </div>
 </div>
+</section>
 </template>
 
 <script>
