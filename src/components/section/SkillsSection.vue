@@ -202,4 +202,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+img{
+  transition: all 0.25s ease;
+}
+
+img:hover{
+  transform: rotate(4deg);
+}
+</style>
