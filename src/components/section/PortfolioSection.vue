@@ -11,6 +11,30 @@
         
         </div>
       </div> -->
+
+
+      <div class="row">
+        <div class="col-md-6">
+ <img
+              src="../../assets/img/portfolio/InspireSS.png"
+              class="img-fluid elevation-5"
+              alt=""
+            />
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="card p-2 bg-dark text-light  h-100">
+<div class="card-body h-100">
+  <div class="card-title ">
+ <p class="text-center fs-4">Inspire</p>
+  </div>
+  Inspire: Calendar Application and Task List App
+</div>
+
+          </div>
+        </div>
+      </div>
       <div class="row">
 
 

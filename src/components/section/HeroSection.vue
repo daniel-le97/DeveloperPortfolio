@@ -22,26 +22,18 @@
    
   </section> -->
 
-  <div class="container-fluid hero-image text-center d-flex justify-content-center align-items-center">
-    <ParticleComponent/>
+  <div
+    class="container-fluid hero-image text-center d-flex justify-content-center align-items-center"
+  >
+    <ParticleComponent />
     <div class="row">
       <div class="col-md-example text-center">
-      <h1 class="text-light display-1"> Learn 
-<b
-
-    v-motion-slide-bottom
-          :delay="300"
->Anything. </b>
-<b
-    v-motion-slide-bottom
-          :delay="600"
->Anytime. </b>
-<b
-    v-motion-slide-bottom
-          :delay="900"
->Anywhere.</b>
-
-      </h1>
+        <h1 id="heroText" class="text-light display-1 hero-text">
+          Learn
+          <b v-motion-slide-bottom :delay="600">Anything. </b>
+          <b v-motion-slide-bottom :delay="1200">Anytime. </b>
+          <b v-motion-slide-bottom :delay="1800">Anywhere.</b>
+        </h1>
       </div>
     </div>
   </div>
@@ -55,10 +47,42 @@ import ParticleComponent from "../ParticleComponent.vue";
 export default {
   props: {},
   setup(props) {
-    onMounted(()=>{
-    
-    })
+    onMounted(() => {
+      paralaxx1();
+    });
     const editable = ref({});
+
+    function paralaxx1() {
+      let text1 = document.getElementById("heroText");
+      console.log(text1);
+      let prevScrollpos = window.scrollY;
+      console.log(prevScrollpos);
+      window.onscroll = function () {
+        let currentScrollPos = window.scrollY;
+        console.log(currentScrollPos);
+        if (prevScrollpos > currentScrollPos) {
+          // text1.classList.add('test1')
+          // text1.classList.remove('test')
+          text1.style.transform = `translateY(${currentScrollPos}px)`;
+          // text1.style.transform = "translateY(0deg)"
+        } else {
+          // text1.classList.remove('test1')
+          // text1.classList.add('test')
+          text1.style.transform = `translateY(${currentScrollPos}px)`;
+        }
+
+        if (currentScrollPos > 300) {
+          // console.log('test');
+          text1.style.filter = "opacity(0)";
+        }
+
+        if (currentScrollPos < 250) {
+          text1.style.filter = "opacity(1)";
+        }
+
+        prevScrollpos = currentScrollPos;
+      };
+    }
     return {
       editable,
     };
@@ -68,9 +92,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#heroText {
+  transition: all 0.5s ease;
+}
 
-#hero{
- position: absolute;
+.test {
+  transition: all 1.25s ease;
+  transform: translateY(240px);
+}
+.test1 {
+  transition: all 1.25s ease;
+  transform: translateY(0px);
+}
+#hero {
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -80,10 +115,8 @@ export default {
   z-index: 0;
 }
 #heroVideo {
-
-width: 100%;
-object-fit:cover;
-
+  width: 100%;
+  object-fit: cover;
 }
 .hero-image {
   height: 100vh;
