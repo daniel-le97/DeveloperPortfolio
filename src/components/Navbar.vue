@@ -1,5 +1,5 @@
 <template>
-  <nav  id="navBar" class="navbar navbar-expand-lg navbar-dark bg-custom px-3 fixed-top ">
+  <nav   class="navbar navbar-expand-lg navbar-dark bg-custom px-3  ">
     <div class="d-flex me-5">
       <p class="mb-0 font-1 fs-5">Tung Le</p>
       <p class="mb-0 ms-4 font-1 fs-5">SoftWare Developer</p>
@@ -39,7 +39,7 @@ import { onMounted } from "vue";
 export default {
   setup() {
 onMounted(()=>{
-hideOnScroll()
+// hideOnScroll()
 })
        function hideOnScroll() {
       let nav = document.querySelector("#navBar");
@@ -48,12 +48,12 @@ hideOnScroll()
       window.onscroll = function () {
         let currentScrollPos = window.scrollY;
         if (prevScrollpos > currentScrollPos) {
-          nav.style.top = "0";
-             nav.classList.add('opacity-0')
+          nav.style.top = "0px";
+            
           
         } else {
           nav.style.top = "-250px";
-             nav.classList.add('opacity-0')
+           
         }
         prevScrollpos = currentScrollPos;
       };

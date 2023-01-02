@@ -1,8 +1,8 @@
 <template>
   <section id="portfolio" class="py-5 section-bubble3">
     <div class="container">
-      <div class="section-title">
-        <h1>My Projects</h1>
+      <div class="section-title d-flex">
+        <h1>Some Things I've Built</h1>
       </div>
 
       <!-- <div class="row" v-for="p in projects">
@@ -12,26 +12,94 @@
         </div>
       </div> -->
 
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row my-5">
+        <div class="col-md-7">
           <img
-            src="../../assets/img/portfolio/InspireSS.png"
+            src="../../assets/img/portfolio/samadhiApp.png"
+            class="img-fluid elevation-6 rounded"
+            alt=""
+          />
+        </div>
+        <div class="col-md-5 position-relative">
+          <p class="font-1 fs-5 text-warning">Featured Project</p>
+          <p class="font-1 fs-3 text-light text-shadow"> SamadhiYogaIdaho</p>
+          <div
+            class="card elevation-6 p-2 border-0 bg-primary text-light position-absolute project-description w-100"
+          >
+            <div class="card-body">
+              Inspiration is a gift, The Inspire application allows users to
+              keep track of daily tasks and the weather with the help of a
+              randomly generated quote and beautiful background image scenery
+            </div>
+
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Javascript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row my-6" style="">
+        <div class="col-md-5 position-relative text-end">
+          <p class="font-1 fs-5 text-warning">Featured Project</p>
+          <p class="font-1 fs-3 text-light text-shadow">Better After Books</p>
+          <div
+            class="card p-2  border-0 bg-primary text-light position-absolute project-description-flip w-100 "
+            style="z-index:9999;"
+           
+          >
+            <div class="card-body">
+              Inspiration is a gift, The Inspire application allows users to
+              keep track of daily tasks and the weather with the help of a
+              randomly generated quote and beautiful background image scenery
+            </div>
+
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <img
+            src="../../assets/img/portfolio/BetterAfterBooks.png"
             class="img-fluid elevation-5 rounded"
             alt=""
           />
         </div>
-        <div class="col-md-6">
-          <div class="card p-2 bg-dark text-light h-100">
-            <div class="card-body h-100">
-              <div class="card-title">
-                <p class="text-center fs-4">Inspire</p>
-              </div>
-              Inspire: Calendar Application and Task List App
+      </div>
+
+         <div class="row my-5">
+        <div class="col-md-7">
+          <img
+            src="../../assets/img/portfolio/KeeprSS.png"
+            class="img-fluid elevation-6 rounded"
+            alt=""
+          />
+        </div>
+        <div class="col-md-5 position-relative">
+          <p class="font-1 fs-5 text-warning">Featured Project</p>
+          <p class="font-1 fs-3 text-light text-shadow"> Keepr</p>
+          <div
+            class="card border-0 elevation-6 p-2 bg-primary text-light position-absolute project-description w-100"
+          >
+            <div class="card-body">
+              Inspiration is a gift, The Inspire application allows users to
+              keep track of daily tasks and the weather with the help of a
+              randomly generated quote and beautiful background image scenery
             </div>
+
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Javascript</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div
           v-motion-slide-visible-once-bottom
           :delay="300"
@@ -220,7 +288,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -246,4 +314,35 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+.my-6{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+img{
+  transition: all 0.5s ease;
+}
+
+img:hover {
+
+  transition: all 0.5s ease;
+  filter: brightness(120%);
+
+    cursor: pointer;
+}
+
+.list-group-item {
+  background: transparent;
+  border: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.project-description {
+  left: -80px;
+}
+.project-description-flip {
+  left: 80px;
+}
+</style>

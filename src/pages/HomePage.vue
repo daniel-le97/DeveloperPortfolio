@@ -7,9 +7,11 @@
 <div class="position-relative">
 </div>
 <SocialBar/>
+<!-- <EmailBar/> -->
 </template>
 
 <script>
+import EmailBar from "../components/EmailBar.vue";
 import AboutSection from "../components/section/AboutSection.vue";
 import ContactSection from "../components/section/ContactSection.vue";
 import HeroSection from "../components/section/HeroSection.vue";
@@ -21,7 +23,7 @@ export default {
     setup() {
         return {};
     },
-    components: { HeroSection, AboutSection, PortfolioSection, SkillsSection, ContactSection, SocialBar }
+    components: { HeroSection, AboutSection, PortfolioSection, SkillsSection, ContactSection, SocialBar, EmailBar }
 }
 </script>
 

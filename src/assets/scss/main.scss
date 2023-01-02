@@ -19,14 +19,21 @@
 .font-1{
   font-family: 'Bebas Neue', cursive;
 }
-section{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
+
 .section-title h1{
   font-size: 4rem;
   margin-bottom: 2.5rem;
 }
+.text-shadow {
+
+
+  text-shadow: 0px 1px 2px #000000;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+    text-shadow: 0px 1px 2px #000000;
+  }
+}
+
 body{
   overscroll-behavior: none;
 }
@@ -74,9 +81,9 @@ form:invalid button[type="submit"] {
 $spacer-height: 20vw;
 $section1-bg-color: #ffffff;
 $section2-bg-color: #FFD2B0;
-$section3-bg-color: #384364;
+$section3-bg-color: #234755;
 $section4-bg-color: #cccccc;
-$section5-bg-color: #333333;
+$section5-bg-color: #212529;
 
 @mixin bubbles($bubbles-type, $color)
 {
@@ -129,20 +136,19 @@ $section5-bg-color: #333333;
 }
 
 
-
 .section-bubble1
 {
-  @include section-bubble-with-colors(a, $section5-bg-color, $section2-bg-color);
+  @include section-bubble-with-colors(a, $section5-bg-color, $section3-bg-color);
 }
 
 .section-bubble2
 {
-  @include section-bubble-with-colors(b, $section2-bg-color, $section3-bg-color);
+  @include section-bubble-with-colors(b, $section3-bg-color, $section5-bg-color);
 }
 
 .section-bubble3
 {
-  @include section-bubble-with-colors(a, $section3-bg-color, $section4-bg-color);
+  @include section-bubble-with-colors(a, $section5-bg-color, $section3-bg-color);
   
   h1
   { 
@@ -157,7 +163,7 @@ $section5-bg-color: #333333;
 
 .section-bubble4
 {
-  @include section-bubble-with-colors(b, $section4-bg-color, $section5-bg-color);
+  @include section-bubble-with-colors(b, $section3-bg-color, $section5-bg-color);
 }
 
 .section-bubble5

@@ -27,7 +27,7 @@
            v-motion-slide-visible-once-bottom
           :delay="300"
           class="px-md-5 aboutmeText text-start fs-5">
-            Hello my name is Tung Le and welcome to my landing page! I'm a
+            Hello! My name is Tung  and I enjoy designing and creating. My interest in web development started back in 2015 when i  I'm a
             full-stack software developer with a passion for creativity, problem
             solving and learning something new every day. I immediately fell in
             love with coding the moment i started with "Hello World!" I was

@@ -31,19 +31,19 @@
         <p
           v-motion-slide-bottom
           :delay="300"
-          class="text-start display-6 ms-5 font-1 mb-0"
+          class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
         >
           creative
         </p>
-        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 mb-0">
-          Designer <b class="display-6">&</b>
+        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 mb-0 text-shadow">
+          Designer <b class="display-6 text-warning">&</b>
         </p>
-        <p v-motion-slide-bottom :delay="300" class="font-1 display-7">
+        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 text-shadow">
           Developer
         </p>
       </div>
       <div class="col-md-6 text-center">
-        <h1 id="heroText" class="text-light display-1 hero-text">
+        <h1 id="heroText" class="text-light display-1 hero-text text-shadow">
           Learn
           <b v-motion-slide-bottom :delay="600">Anything. </b>
           <b v-motion-slide-bottom :delay="1000">Anytime. </b>
@@ -51,12 +51,14 @@
         </h1>
       </div>
     </div>
+    <GentleWave/>
   </div>
 </template>
 
 <script>
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
+import GentleWave from "../GentleWave.vue";
 import ParticleComponent from "../ParticleComponent.vue";
 
 export default {
@@ -105,7 +107,7 @@ export default {
       editable,
     };
   },
-  components: { ParticleComponent },
+  components: { ParticleComponent, GentleWave },
 };
 </script>
 
