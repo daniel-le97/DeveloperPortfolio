@@ -10,7 +10,7 @@
       <div class="row my-5">
         <div class="col-md-7">
           <img
-          v-motion-slide-visible-once-bottom :delay="300"
+          v-motion-slide-visible-once-bottom :delay="500"
             src="../../assets/img/portfolio/samadhiApp.png"
             class="img-fluid elevation-6 rounded"
             alt=""
@@ -18,15 +18,15 @@
         </div>
         <div class="col-md-5 position-relative">
           <p 
-          v-motion-slide-visible-once-bottom :delay="300" class="font-1 fs-5 text-warning">Featured Project</p>
+          v-motion-slide-visible-once-bottom :delay="500" class="font-1 fs-5 text-warning">Featured Project</p>
           <p
-          v-motion-slide-visible-once-bottom :delay="300" class="font-1 fs-3 text-light text-shadow">SamadhiYogaIdaho</p>
+          v-motion-slide-visible-once-bottom :delay="600" class="font-1 fs-3 text-light text-shadow">SamadhiYogaIdaho</p>
           <div
-          v-motion-slide-visible-once-bottom :delay="300"
+          v-motion-slide-visible-once-bottom :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light  project-description w-100"
           >
             <div 
-            v-motion-slide-visible-once-bottom :delay="300" class="card-body">
+            v-motion-slide-visible-once-bottom :delay="800" class="card-body">
               Inspiration is a gift, The Inspire application allows users to
               keep track of daily tasks and the weather with the help of a
               randomly generated quote and beautiful background image scenery
