@@ -120,6 +120,10 @@ export default {
 }
 .display-7 {
   font-size: 10rem;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  font-size: 6rem;
+  }
 }
 #heroText {
   transition: all 0.5s ease;

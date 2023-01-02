@@ -5,49 +5,56 @@
         <h1>Some Things I've Built</h1>
       </div>
 
-      <!-- <div class="row" v-for="p in projects">
-        <div class="col-md-6">
-          <img :src="p" alt="" class="img-fluid rounded elevation-5" />
-        
-        </div>
-      </div> -->
+  
 
       <div class="row my-5">
         <div class="col-md-7">
           <img
+          v-motion-slide-visible-once-bottom :delay="300"
             src="../../assets/img/portfolio/samadhiApp.png"
             class="img-fluid elevation-6 rounded"
             alt=""
           />
         </div>
         <div class="col-md-5 position-relative">
-          <p class="font-1 fs-5 text-warning">Featured Project</p>
-          <p class="font-1 fs-3 text-light text-shadow"> SamadhiYogaIdaho</p>
+          <p 
+          v-motion-slide-visible-once-bottom :delay="300" class="font-1 fs-5 text-warning">Featured Project</p>
+          <p
+          v-motion-slide-visible-once-bottom :delay="300" class="font-1 fs-3 text-light text-shadow">SamadhiYogaIdaho</p>
           <div
-            class="card elevation-6 p-2 border-0 bg-primary text-light position-absolute project-description w-100"
+          v-motion-slide-visible-once-bottom :delay="300"
+            class="card elevation-6 p-2 border-0 bg-primary text-light  project-description w-100"
           >
-            <div class="card-body">
+            <div 
+            v-motion-slide-visible-once-bottom :delay="300" class="card-body">
               Inspiration is a gift, The Inspire application allows users to
               keep track of daily tasks and the weather with the help of a
               randomly generated quote and beautiful background image scenery
             </div>
 
             <ul class="list-group list-group-horizontal bg-transparent">
-              <li class="list-group-item">HTML</li>
-              <li class="list-group-item">CSS</li>
-              <li class="list-group-item">Javascript</li>
+              <li 
+              v-motion-slide-visible-once-bottom :delay="300" class="list-group-item">HTML</li>
+              <li 
+              v-motion-slide-visible-once-bottom :delay="300" class="list-group-item">CSS</li>
+              <li 
+              v-motion-slide-visible-once-bottom :delay="300" class="list-group-item">Javascript</li>
             </ul>
           </div>
         </div>
       </div>
+
+
+
+
+
       <div class="row my-6" style="">
         <div class="col-md-5 position-relative text-end">
           <p class="font-1 fs-5 text-warning">Featured Project</p>
           <p class="font-1 fs-3 text-light text-shadow">Better After Books</p>
           <div
-            class="card p-2  border-0 bg-primary text-light position-absolute project-description-flip w-100 "
-            style="z-index:9999;"
-           
+            class="card p-2 border-0 bg-primary text-light position-absolute project-description-flip w-100"
+            style="z-index: 9"
           >
             <div class="card-body">
               Inspiration is a gift, The Inspire application allows users to
@@ -71,7 +78,7 @@
         </div>
       </div>
 
-         <div class="row my-5">
+      <div class="row my-5">
         <div class="col-md-7">
           <img
             src="../../assets/img/portfolio/KeeprSS.png"
@@ -81,7 +88,7 @@
         </div>
         <div class="col-md-5 position-relative">
           <p class="font-1 fs-5 text-warning">Featured Project</p>
-          <p class="font-1 fs-3 text-light text-shadow"> Keepr</p>
+          <p class="font-1 fs-3 text-light text-shadow">Keepr</p>
           <div
             class="card border-0 elevation-6 p-2 bg-primary text-light position-absolute project-description w-100"
           >
@@ -290,6 +297,35 @@
         </div>
       </div> -->
     </div>
+
+    <div class="container" style="margin-top: 10rem">
+      <div class="row g-3">
+        <div class="col-md-12 text-center">
+          <p class="font-1 fs-2 text-light">Other Noteworthy Projects</p>
+        </div>
+
+        <div class="col-md-4" v-for="a in archivedProjects">
+          <div class="card border-0 p-2 bg-primary">
+            <div class="d-flex justify-content-between">
+              <i class="mdi mdi-folder fs-3 text-warning"></i>
+              <GitHubIcon />
+            </div>
+
+            <div class="">
+              <p class="fs-3 font-1">{{ a.title }}</p>
+              <p class="fs-5 text-light">{{ a.description }}</p>
+            </div>
+            <div class="">
+              <ul class="list group">
+                <li class="list-group-items" v-for="t in archivedProjects.tech">
+                  {{ t }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -297,39 +333,82 @@
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
+import GitHubIcon from "../GitHubIcon.vue";
 
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
-
+    const archivedProjects = [
+      {
+        title: `I'm Game`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+      {
+        title: `Tower`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+      {
+        title: `Inspire`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+      {
+        title: `Net Work`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+      {
+        title: `Task Master`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+      {
+        title: `Dimension Miner`,
+        description:
+          "A single page web app for helping users find board games and add them to a list",
+        tech: ["Node Js", "Vue", "BootStrap"],
+      },
+    ];
     onMounted(() => {});
     watchEffect(() => {});
-
     return {
+      archivedProjects,
       editable,
       projects: computed(() => AppState.portfolioImages),
     };
   },
+  components: { GitHubIcon },
 };
 </script>
 
 <style lang="scss" scoped>
-
-.my-6{
+.my-6 {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-img{
+img {
   transition: all 0.5s ease;
+    @media only screen and (max-width: 768px){
+  filter: brightness(50%);
+  filter: grayscale(90);
+  }
 }
 
 img:hover {
-
   transition: all 0.5s ease;
   filter: brightness(120%);
 
-    cursor: pointer;
+  cursor: pointer;
+  //when screen is 768px OR LESS
+
 }
 
 .list-group-item {
@@ -341,6 +420,15 @@ img:hover {
 }
 .project-description {
   left: -80px;
+  position: absolute;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+
+  left: 0;
+  top: -200px;
+background-color: rgba(27, 82, 95, 0.534) !important;
+backdrop-filter: blur(1px);
+  }
 }
 .project-description-flip {
   left: 80px;

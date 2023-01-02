@@ -3,6 +3,8 @@
     <h1>Welcome {{ account.name }}</h1>
     <img class="rounded" :src="account.picture" alt="" />
     <p>{{ account.email }}</p>
+
+    <p>{{test}}</p>
   </div>
 </template>
 
@@ -12,7 +14,12 @@ import { AppState } from '../AppState'
 export default {
   setup() {
     return {
-      account: computed(() => AppState.account)
+      account: computed(() => AppState.account),
+      test: computed(() =>  {
+        let x =1
+        let y =2
+return x +y
+      }),
     }
   }
 }

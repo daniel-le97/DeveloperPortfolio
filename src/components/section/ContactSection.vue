@@ -1,9 +1,10 @@
 <template>
-<section class="py-5 section-bubble4">
+<section id="contact" class="py-5 section-bubble4">
   <div class="container">
   <div class="row">
-    <div class="col-md-example">
-
+    <div class="col-md-12 text-center">
+ <p class="display-3 font-1 text-light">Get In Touch</p>
+ <p> </p>
     </div>
   </div>
 </div>

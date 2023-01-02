@@ -14,24 +14,22 @@
       class=""
     >
       <img
-        src="https://cdn3.iconfinder.com/data/icons/back-building-exercises-and-muscle-building/437/back-building-exercises-017-512.png"
+        src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png"
         alt=""
-        class="progress bg-transparent"
+        class="progress bg-transparent floating"
       />
 
-<p class="position-absolute start-0 top-0 font-1 text-success">
+      <p class="position-absolute start-0 top-0 font-1 text-success">
         {{ percent }}
-</p>
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from '../AppState.js'
-
+import { AppState } from "../AppState.js";
 
 export default {
   props: {},
@@ -48,25 +46,45 @@ export default {
     });
     function updateProgress(num1, num2) {
       var percent = Math.ceil((num1 / num2) * 100) + "%";
-AppState.percent = percent
+      AppState.percent = percent;
       document.getElementById(
         "progress"
       ).style.transform = `translateX(${percent})`;
 
-      
+      if (percent == 100 +'%') {
+        console.log('teasdfgasdgasdg');
+        let test =    document.getElementById(
+        "progress"
+      )
+   test.className +' floating'
+      }
     }
 
     watchEffect(() => {});
 
     return {
       editable,
-      percent:computed(()=> AppState.percent)
+      percent: computed(() => AppState.percent),
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+ 
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 .placeholder {
   padding: 3em;
 }
@@ -85,5 +103,9 @@ AppState.percent = percent
 .progress {
   height: 100px;
   transform: translateX(-65px);
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  height: 75px;
+  }
 }
 </style>

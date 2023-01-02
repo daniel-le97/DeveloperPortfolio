@@ -1,8 +1,8 @@
 <template>
-  <nav   class="navbar navbar-expand-lg navbar-dark bg-custom px-3  ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-3">
     <div class="d-flex me-5">
-      <p class="mb-0 font-1 fs-5">Tung Le</p>
-      <p class="mb-0 ms-4 font-1 fs-5">SoftWare Developer</p>
+      <p class="mb-0 font-1 fs-3 text-light">Tung Le</p>
+      <p class="mb-0 ms-4 font-1 fs-3 text-light">SoftWare Developer</p>
     </div>
     <button
       class="navbar-toggler"
@@ -18,12 +18,36 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <li>
-          <router-link
-            :to="{ name: 'Home' }"
+          <button
+            @click="scrollTo(1)"
             class="btn text-success lighten-30 selectable text-uppercase"
           >
-            Home
-          </router-link>
+            About
+          </button>
+        </li>
+        <li>
+          <button
+            @click="scrollTo(2)"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Experience
+          </button>
+        </li>
+        <li>
+          <button
+            @click="scrollTo(3)"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Portfolio
+          </button>
+        </li>
+        <li>
+          <button
+            @click="scrollTo(4)"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Contact
+          </button>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
@@ -38,10 +62,10 @@ import ProgressBar from "./ProgressBar.vue";
 import { onMounted } from "vue";
 export default {
   setup() {
-onMounted(()=>{
-// hideOnScroll()
-})
-       function hideOnScroll() {
+    onMounted(() => {
+      // hideOnScroll()
+    });
+    function hideOnScroll() {
       let nav = document.querySelector("#navBar");
       let prevScrollpos = window.scrollY;
       console.log(nav);
@@ -49,16 +73,36 @@ onMounted(()=>{
         let currentScrollPos = window.scrollY;
         if (prevScrollpos > currentScrollPos) {
           nav.style.top = "0px";
-            
-          
         } else {
           nav.style.top = "-250px";
-           
         }
         prevScrollpos = currentScrollPos;
       };
     }
-    return {};
+    return {
+      scrollTo(x) {
+        console.log(x);
+        let elementId;
+        if (x == 1) {
+          elementId = "about";
+        } else
+        if (x == 2) {
+          elementId = "experience";
+        } else
+        if (x == 3) {
+          elementId = "portfolio";
+        } else
+        if (x == 4) {
+          elementId = "contact";
+        }
+
+        window.scrollTo({
+          top: document.getElementById(elementId).offsetTop,
+          left: 0,
+          behavior: "smooth",
+        });
+      },
+    };
   },
   components: { Login, ProgressBar },
 };
@@ -84,7 +128,7 @@ nav {
   }
 }
 
-.bg-custom{
+.bg-custom {
   background-color: rgba(51, 46, 46, 0.685);
   backdrop-filter: blur(8px);
 }
