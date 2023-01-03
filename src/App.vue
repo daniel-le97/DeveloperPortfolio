@@ -16,6 +16,7 @@ export default {
   setup() {
     onMounted(() => {
       // hideOnScroll();
+    
 
       hideOnScrollTest('#nav');
     });
@@ -23,6 +24,7 @@ export default {
       let nav = document.querySelector(`${el}`);
 
       let prevScrollpos = window.scrollY;
+     
       // console.log(nav);
       window.onscroll = function () {
         let currentScrollPos = window.scrollY;

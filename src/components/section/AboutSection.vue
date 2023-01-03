@@ -103,7 +103,7 @@
             I love drawing mandalas as a way of relaxation and creative
             meditation. Procreate is one of my favorite digital mediums of
             creating art. Since being caught by the web developer bug I've been
-            able to synergize my love of art with UI/UX Design
+            able to combine my love for art with developing beautiful and creative front-end applications and design styles.
           </p>
         </div>
 
@@ -112,7 +112,7 @@
             <img
               src="../../assets/img/Procreate/SunflowerStar.png"
               alt=""
-              class="procreate-art perspective-left"
+              class="procreate-art perspective-right"
             />
           </div>
           <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
@@ -126,7 +126,7 @@
             <img
               src="../../assets/img/Procreate/CosmicWolf.png"
               alt=""
-              class="procreate-art perspective-left"
+              class="procreate-art perspective-right"
             />
           </div>
           <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
@@ -140,19 +140,13 @@
             <img
               src="../../assets/img/Procreate/Mandala2.png"
               alt=""
-              class="procreate-art perspective-left"
+              class="procreate-art perspective-right"
             />
           </div>
+        
           <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
             <img
-              src="../../assets/img/Procreate/SunflowerStar.png"
-              alt=""
-              class="procreate-art perspective-left"
-            />
-          </div>
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/SunflowerStar.png"
+              src="../../assets/img/Procreate/Turtle.png"
               alt=""
               class="procreate-art perspective-left"
             />
@@ -182,7 +176,8 @@ export default {
 <style lang="scss" scoped>
 .procreate-art {
   width: auto;
-  height: 400px;
+  height: 300px;
+  cursor: pointer;
 }
 
 .procreate-art:hover {
