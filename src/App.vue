@@ -20,6 +20,7 @@ export default {
     });
     function hideOnScrollTest() {
       let nav = document.querySelector("#nav");
+      
       let prevScrollpos = window.scrollY;
 // console.log(nav);
       window.onscroll = function () {
@@ -27,9 +28,8 @@ export default {
         if (prevScrollpos > currentScrollPos) {
           nav.style.top = "0";
         } else {
-          nav.style.top = "-250px";
-          nav.classList.add('bg-dark')
-          console.log(nav);
+          nav.style.top = "-62px";
+      
         }
         prevScrollpos = currentScrollPos;
       };

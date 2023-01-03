@@ -1,6 +1,8 @@
 <template>
 <a href="https://github.com/TungLe0319">
-    <i class="mdi mdi-github fs-3 text-light" title="Github Link"></i>
+  <slot>
+    
+  </slot>
 </a>
 </template>
 

@@ -26,32 +26,62 @@
     class="container-fluid hero-image text-center d-flex justify-content-center align-items-center"
   >
     <ParticleComponent />
-    <div class="row justify-content-between">
+    <div class="row justify-content-between w-100">
       <div id="heroText2" class="col-md-6 hero-text-2">
         <p
           v-motion-slide-bottom
-          :delay="300"
+          :delay="600"
           class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
         >
           creative
         </p>
-        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 mb-0 text-shadow">
+        <p
+          v-motion-slide-bottom
+          :delay="1000"
+          class="font-1 display-7 mb-0 text-shadow"
+        >
           Designer <b class="display-6 text-warning">&</b>
         </p>
-        <p v-motion-slide-bottom :delay="300" class="font-1 display-7 text-shadow">
+        <p
+          v-motion-slide-bottom
+          :delay="1500"
+          class="font-1 display-7 text-shadow"
+        >
           Developer
         </p>
       </div>
-      <div class="col-md-6 text-center">
-        <h1 id="heroText" class="text-light display-1 hero-text text-shadow">
-          Learn
-          <b v-motion-slide-bottom :delay="600">Anything. </b>
-          <b v-motion-slide-bottom :delay="1000">Anytime. </b>
-          <b v-motion-slide-bottom :delay="1500">Anywhere.</b>
-        </h1>
+      <div class="col-md-6 text-end text-light">
+           <p
+          v-motion-slide-bottom
+          :delay="600"
+          class=" display-6 font-1 mb-0 text-shadow"
+        >
+           Willing To Learn
+        </p>
+         <p
+          v-motion-slide-bottom
+          :delay="600"
+          class="  display-1 font-1 mb-0 text-shadow"
+        >
+        Anything
+        </p>
+        <p
+          v-motion-slide-bottom
+          :delay="1000"
+          class="font-1 display-1 mb-0 text-shadow"
+        >
+          Anytime
+        </p>
+        <p
+          v-motion-slide-bottom
+          :delay="1500"
+          class="font-1 display-1 text-shadow"
+        >
+          Anywhere
+        </p>
       </div>
     </div>
-    <GentleWave/>
+    <GentleWave />
   </div>
 </template>
 
@@ -65,7 +95,7 @@ export default {
   props: {},
   setup(props) {
     onMounted(() => {
-      paralaxx1();
+      // paralaxx1();
     });
     const editable = ref({});
 
@@ -121,8 +151,8 @@ export default {
 .display-7 {
   font-size: 10rem;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  font-size: 6rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 6rem;
   }
 }
 #heroText {

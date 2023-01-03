@@ -4,9 +4,9 @@
       <div class="section-title d-flex justify-content-between">
         <h1 v-motion-slide-visible-once-bottom :delay="300">About me</h1>
 
-        <div class="">
+        <!-- <div class="">
           <p class="fs-3">//life motto <br> if(attempt == fail){ <br> remember()  <br> learn()     <br> retry() <br>  }</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="row">
@@ -15,7 +15,7 @@
             v-motion-slide-visible-once-bottom
             :delay="300"
             src="../../assets/img/Tungle/Tung Le.4.jpg"
-            class="img-fluid rounded profileImg"
+            class="img-fluid rounded profileImg elevation-6"
             alt=""
           />
         </div>
@@ -26,7 +26,7 @@
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="px-md-5 aboutmeText text-start fs-5"
+            class="px-md-5 font-2 text-start fs-5"
           >
             Hello! My name is Tung and I enjoy designing and creating. My
             interest in web development started back in 2015 when i I'm a
@@ -44,6 +44,7 @@
         </div>
       </div>
     </div>
+   <!-- <BlockQuote/> -->
   </section>
 </template>
 

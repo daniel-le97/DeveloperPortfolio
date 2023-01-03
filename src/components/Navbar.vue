@@ -20,7 +20,7 @@
         <li>
           <button
             @click="scrollTo(1)"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-light font-1 fs-4 "
           >
             About
           </button>
@@ -28,7 +28,7 @@
         <li>
           <button
             @click="scrollTo(2)"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-light font-1 fs-4 "
           >
             Experience
           </button>
@@ -36,7 +36,7 @@
         <li>
           <button
             @click="scrollTo(3)"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-light font-1 fs-4 "
           >
             Portfolio
           </button>
@@ -44,7 +44,7 @@
         <li>
           <button
             @click="scrollTo(4)"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-light font-1 fs-4 "
           >
             Contact
           </button>
@@ -112,7 +112,14 @@ export default {
 a:hover {
   text-decoration: none;
 }
-
+.btn{
+transition: all 0.5s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+ 
+  color: turquoise !important;
+}
 .nav-link {
   text-transform: uppercase;
 }

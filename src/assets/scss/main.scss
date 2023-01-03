@@ -3,7 +3,7 @@
 @import "./_overrides.scss";
 @import "./_utilities.scss";
 @import "./loaders.scss";
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Courgette&family=DM+Sans&family=Marko+One&family=Passion+One&family=Patrick+Hand&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Courgette&family=DM+Sans&family=Marko+One&family=Montserrat&family=Passion+One&family=Patrick+Hand&family=Roboto&display=swap');
 #tsparticles {
   position: absolute;
   top: 0;
@@ -15,6 +15,9 @@
   z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
 
+.font-2{
+  font-family: 'Montserrat', sans-serif;
+}
 
 .font-1{
   font-family: 'Bebas Neue', cursive;
@@ -124,7 +127,7 @@ $section5-bg-color: #212529;
   {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     
     width: 100%;
     height: $spacer-height;
@@ -197,3 +200,5 @@ $section5-bg-color: #212529;
     
   }
 }
+
+

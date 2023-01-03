@@ -1,5 +1,12 @@
 <template>
   <div class="progressContainer">
+     <div
+    
+      id="progress2"
+      class="progress-2 "
+    >
+     
+    </div>
     <div
       v-motion
       :initial="{
@@ -51,13 +58,12 @@ export default {
         "progress"
       ).style.transform = `translateX(${percent})`;
 
-      if (percent == 100 +'%') {
-        console.log('teasdfgasdgasdg');
-        let test =    document.getElementById(
-        "progress"
-      )
-   test.className +' floating'
-      }
+    
+      document.getElementById(
+        "progress2"
+      ).style.width = percent
+
+    
     }
 
     watchEffect(() => {});
@@ -97,12 +103,22 @@ export default {
   background: rgb(250, 236, 236);
 }
 
-#progress {
+#progress ,#progress2{
   transition: all 0.75s ease;
 }
 .progress {
   height: 100px;
   transform: translateX(-65px);
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  height: 75px;
+  }
+}
+.progress-2 {
+  height: 2px;
+  width: 1px;
+  background: #e6cb7a;
+
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px){
   height: 75px;
