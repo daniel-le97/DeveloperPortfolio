@@ -61,17 +61,26 @@
       </div>
 
       <div class="row my-5 justify-content-center">
-        <div class="col-md-6 elevation-6 text-center">
+        <div class="col-md-6 text-center">
           <p class="font-1 fs-4 text-warning"> Current Favorite Song</p>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe class="elevation-6" style="border-radius:12px" src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-        <div class="col-md-6 elevation-6 text-center d-flex">
-    <img src="../../assets/img/Coco.png" alt="" width="200" height="240">
+        <div class="col-md-6  text-center ">
+    <p class="font-1 fs-4 text-warning"> Creatures I'd die for</p>
+<div class="d-flex justify-content-around p-2">
+      <img src="../../assets/img/Coco.png" alt="" width="240" height="240" class="elevation-6 rounded">
+    <img src="../../assets/img/Goblin.png" alt="" width="240" height="240" class="elevation-6 rounded">
+</div>
         </div>
       </div>
     </div>
     <!-- <BlockQuote/> -->
     
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
   </section>
 </template>
 
