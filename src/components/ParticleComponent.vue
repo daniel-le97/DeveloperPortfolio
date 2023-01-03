@@ -70,7 +70,7 @@
           value: 0.2,
         },
         shape: {
-          type: 'circle',
+          type: 'none',
         },
         size: {
           random: true,

@@ -11,7 +11,7 @@
         </h1>
       </div>
 
-   <!-- SECTION EDUCATION -->
+      <!-- SECTION EDUCATION -->
       <div class="row d-flex justify-content around">
         <div class="col-md-12">
           <div class="section-title">
@@ -24,7 +24,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6">
           <a
             v-motion-slide-visible-once-bottom
             :delay="300"
@@ -39,24 +39,43 @@
           ></a>
         </div>
 
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-6  align-items-center">
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="font-2 fs-4 text-light"
+            class="font-2 text-light darken-10 fw-bold"
           >
-            Boise CodeWork's Immersive Full Stack Graduate. fall,22
+            FULL STACK SOFTWARE DEVELOPMENT CERTIFICATION,
+         
+          </p>
+          <p
+            v-motion-slide-visible-once-bottom
+            :delay="300"
+            class="font-2 text-light fw-bold darken-20"
+          >
+            2022 - Boise Codeworks,  Boise, ID
+         
+          </p>
+          <p
+            v-motion-slide-visible-once-bottom
+            :delay="300"
+            class="font-2 text-light"
+          >
+         
+             An immersive full stack software development program that
+            provided over 500 hours of coding experience across multiple
+            technology stacks.
           </p>
         </div>
       </div>
-   <!-- !SECTION EDUCATION -->
+      <!-- !SECTION EDUCATION -->
 
-  <!-- SECTION LANG AND TECH -->
-      <div class="row skills-content gy-4 justify-content-center">
+      <!-- SECTION LANG AND TECH -->
+      <div class="row skills-content gy-4 my-5 justify-content-center">
         <div class="col-md-12">
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
-        <div class="col-4  col-md-2" v-for="s in skillsIcons">
+        <div class="col-4 col-md-2" v-for="s in skillsIcons">
           <CartoonFrame v-motion-roll-visible-once-left :delay="300">
             <div class="v-motion">
               <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
@@ -68,11 +87,9 @@
         ></div>
       </div>
 
-  <!-- !SECTION LANG AND TECH -->
+      <!-- !SECTION LANG AND TECH -->
 
-
-
-   <!-- SECTION DEVSOPPORTUNITIES -->
+      <!-- SECTION DEVSOPPORTUNITIES -->
       <div class="row my-5">
         <div class="section-title">
           <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
@@ -81,41 +98,44 @@
           <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6"
           >
-            <img
-              src="../../assets/img/LLCLogo.png"
-              alt="LLC Logo"
-            />
+            <img src="../../assets/img/LLCLogo.png" alt="LLC Logo" />
           </div>
         </div>
         <div class="col-md-6">
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="font-2 fs-4 text-light"
+            class="font-2 text-light darken-10 fw-bold"
           >
-            Company I Co-Founded with other developers to do freelance work
+          2022
+         
+          </p>
+          <p
+            v-motion-slide-visible-once-bottom
+            :delay="300"
+            class="font-2  text-light"
+          >
+            Company I Co-Founded with a team of 3 other developers from CodeWorks to do freelance work
             while searching for full time employment.
           </p>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="font-1 fs-5 text-light darken-10">
+           <p class="font-1 fs-5 text-light darken-10">
               Projects & work done Listed Below
               <i
                 @click="scrollToProjects()"
                 class="mdi mdi-arrow-down-circle fs-1 text-light action"
               ></i>
             </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+           
           </div>
         </div>
       </div>
 
-   <!-- SECTION DEVSOPPORTUNITIES -->
+      <!-- SECTION DEVSOPPORTUNITIES -->
 
-
-
-
-  <!-- SECTION CURRENTLY LEARNING -->
+      <!-- SECTION CURRENTLY LEARNING -->
       <div class="row my-5 gy-3">
         <div class="section-title">
           <p class="font-1 text-warning fs-2">Currently Learning</p>
@@ -125,12 +145,12 @@
           <div
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="card border-0 elevation-6  text-center "
+            class="card border-0 elevation-6 text-center"
           >
             <img
               src="https://fireship.io/courses/react-next-firebase/img/featured.png"
               alt=""
-              class="rounded   img-fluid"
+              class="rounded img-fluid"
             />
           </div>
         </div>
@@ -153,7 +173,7 @@
           </p>
         </div>
       </div>
-  <!-- !SECTION CURRENTLY LEARNING -->
+      <!-- !SECTION CURRENTLY LEARNING -->
     </div>
   </section>
 </template>
@@ -189,13 +209,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fireship-img{
-
-//when screen is 768px OR LESS
-//when screen is 768px OR LESS
-@media only screen and (max-width: 768px){
-width: 75%;
-}
+.fireship-img {
+  //when screen is 768px OR LESS
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px) {
+    width: 75%;
+  }
 }
 .devsopportunities-image {
   height: 200px;
@@ -204,7 +223,6 @@ width: 75%;
     height: 200px;
     width: 200px;
   }
-
 }
 
 .box {

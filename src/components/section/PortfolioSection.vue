@@ -2,7 +2,7 @@
   <section id="portfolio" class="py-5 section-bubble3">
     <div class="container">
       <div class="section-title d-flex">
-        <h1 class="font-1 text-light">Some Things I've Built</h1>
+        <h1 class="font-1 text-light">Portfolio</h1>
       </div>
 
       <div class="row my-5">
@@ -264,7 +264,7 @@
       <div class="row g-3">
         <div class="col-md-12 text-center">
           <p class="font-1 fs-2 text-warning">Other Noteworthy Projects</p>
-          <p class="font-2  text-light darken-10"> Please Note that some of these projects are hosted on <a href="https://render.com/" class="bg-light rounded p-2"> <img src="https://techcrunch.com/wp-content/uploads/2019/10/render-logo-wordmark.png?w=764" alt="Render Logo" title="Render Logo" width="150" height="50"> </a> as such can take up to <b>1-2 minutes</b> to fully load. <br> I appreciate your patience and hope you enjoy any of my projects.</p>
+          <p class="font-2  text-light darken-10"> Please Note that some of these projects are hosted on <a target="_blank" href="https://render.com/" class="bg-light rounded p-2"> <img src="https://techcrunch.com/wp-content/uploads/2019/10/render-logo-wordmark.png?w=764" alt="Render Logo" title="Render Logo" width="150" height="50"> </a> as such can take up to <b>1-2 minutes</b> to fully load. <br> I appreciate your patience and hope you enjoy any of my projects.</p>
         </div>
 
         <div class="col-md-4" v-for="a in archivedProjects">

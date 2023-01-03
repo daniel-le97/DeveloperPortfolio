@@ -53,6 +53,10 @@ export const AppState = reactive({
       title: "TailWind CSS",
       src: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg",
     },
+    {
+      title: "Sass",
+      src: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
+    },
 
     {
       title: "MySQL",
@@ -69,6 +73,10 @@ export const AppState = reactive({
     {
       title: "Github",
       src: "https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png",
+    },
+    {
+      title: "NPM",
+      src: "https://authy.com/wp-content/uploads/npm-logo.png",
     },
     {
       title: "Postman",
@@ -114,13 +122,14 @@ export const AppState = reactive({
 
   archivedProjects: [
     {
-      title: `I'm Game`,
+      title: `Task Master`,
       description:
-        "Single page application to search and browse board games using Board Game Atlas's API ",
-      tech: ["Node Js", "Vue", "BootStrap", "MongoDb"],
+        "creating a task manager, where users can create multiple lists each with multiple items to complete on that list.They will demonstrate their understanding of the MVC Design pattern by completing this process utilizing services, controllers and models. In addition students will be able to persist data into local storage that will be retrieved on page refresh.",
+      tech: ["Node Js", "Vue", "BootStrap"],
       githubLink: "",
-      externalLink: "",
+      externalLink: "https://tungle0319.github.io/TaskMaster/",
     },
+
     {
       title: `Tower`,
       description:
@@ -128,14 +137,6 @@ export const AppState = reactive({
       tech: ["Node Js", "Vue", "BootStrap", "Auth0"],
       githubLink: "",
       externalLink: "https://thetower-f4he.onrender.com",
-    },
-    {
-      title: `Inspire`,
-      description:
-        "Inspiration is a gift, The Inspire application allows users to keep track of daily tasks and the weather with the help of a randomly generated quote and beautiful background image scenery",
-      tech: ["Node Js", "Vue", "BootStrap"],
-      githubLink: "",
-      externalLink: "",
     },
     {
       title: `Net Work`,
@@ -146,13 +147,23 @@ export const AppState = reactive({
       externalLink: "",
     },
     {
-      title: `Task Master`,
+      title: `Inspire`,
       description:
-        "creating a task manager, where users can create multiple lists each with multiple items to complete on that list.They will demonstrate their understanding of the MVC Design pattern by completing this process utilizing services, controllers and models. In addition students will be able to persist data into local storage that will be retrieved on page refresh.",
+        "Inspiration is a gift, The Inspire application allows users to keep track of daily tasks and the weather with the help of a randomly generated quote and beautiful background image scenery",
       tech: ["Node Js", "Vue", "BootStrap"],
       githubLink: "",
-      externalLink: "https://tungle0319.github.io/TaskMaster/",
+      externalLink: "",
     },
+
+    {
+      title: `I'm Game`,
+      description:
+        "Single page application to search and browse board games using Board Game Atlas's API ",
+      tech: ["Node Js", "Vue", "BootStrap", "MongoDb"],
+      githubLink: "",
+      externalLink: "",
+    },
+
     {
       title: `Dimension Miner`,
       description:

@@ -23,7 +23,7 @@
   </section> -->
 
   <div
-    class="container-fluid hero-image text-center d-flex justify-content-center align-items-center"
+    class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
     <ParticleComponent />
     <div class="row justify-content-between w-100">
@@ -81,6 +81,11 @@
         </p>
       </div>
     </div>
+    <!-- <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="display-5 font-1">Passionate <b class="text-light font-1 display-4">Software Developer</b> from Meridian,Idaho</p>
+      </div>
+    </div> -->
     <GentleWave />
   </div>
 </template>

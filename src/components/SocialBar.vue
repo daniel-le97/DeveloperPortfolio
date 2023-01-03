@@ -2,6 +2,7 @@
   <div class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
+        <PhoneIcon/>
         <GitHubIcon />
         <LinkedInIcon class="linkedIn-icon" />
       </div>
@@ -21,8 +22,9 @@
   <div class="container-fluid d-block d-md-none section-bubble5 py-4">
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center">
-        <GitHubIcon class="github-LinkedIn" />
-        <LinkedInIcon class="github-LinkedIn" />
+           <PhoneIcon/>
+        <GitHubIcon  />
+        <LinkedInIcon  />
       </div>
       <div class="col-md-12 text-center">
         <p>Designed & Built by <b> Tung Le</b></p>
@@ -39,6 +41,7 @@ import { logger } from "../utils/Logger.js";
 import Pop from "../utils/Pop.js";
 import GitHubIcon from "./GitHubIcon.vue";
 import LinkedInIcon from "./LinkedInIcon.vue";
+import PhoneIcon from "./PhoneIcon.vue";
 
 export default {
   props: {},
@@ -50,7 +53,7 @@ export default {
       editable,
     };
   },
-  components: { GitHubIcon, LinkedInIcon },
+  components: { GitHubIcon, LinkedInIcon, PhoneIcon },
 };
 </script>
 
