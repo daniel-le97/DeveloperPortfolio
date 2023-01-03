@@ -150,6 +150,13 @@
               class="procreate-art perspective-left"
             />
           </div>
+          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
+            <img
+              src="../../assets/img/Procreate/SunflowerStar.png"
+              alt=""
+              class="procreate-art perspective-left"
+            />
+          </div>
         </div>
       </div>
     </div>
