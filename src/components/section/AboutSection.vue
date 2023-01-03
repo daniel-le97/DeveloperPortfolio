@@ -78,7 +78,9 @@
     
     <div class="container">
       <div class="row">
-        
+        <div class="col-md-12">
+          <p class="font-1 fs-4 text-warning"> Some of my artwork</p>
+        </div>
       </div>
     </div>
   </section>
