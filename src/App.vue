@@ -17,10 +17,10 @@ export default {
     onMounted(() => {
       // hideOnScroll();
 
-      hideOnScrollTest();
+      hideOnScrollTest('#nav');
     });
-    function hideOnScrollTest() {
-      let nav = document.querySelector("#nav");
+    function hideOnScrollTest(el) {
+      let nav = document.querySelector(`${el}`);
 
       let prevScrollpos = window.scrollY;
       // console.log(nav);

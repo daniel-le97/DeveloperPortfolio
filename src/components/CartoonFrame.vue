@@ -52,10 +52,19 @@ export default {
 }
 
 
-
+.image-card::before{
+   content: "";
+     border-radius: 1rem;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
+  filter: brightness(78%);
+    background-position: center;
+  background-size: cover !important;
+}
 .image-card {
-  width: 120px;
-  height: 120px;
+ 
   padding: 8px;
   border-radius: 1rem;
 

@@ -30,8 +30,12 @@ export const AppState = reactive({
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
     },
     {
+      title: "C-Sharp",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
+    },
+    {
       title: "Node Js",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
+      src: "https://i0.wp.com/www.netgains.org/wp-content/uploads/2014/01/node_js.png?resize=249%2C287&ssl=1",
     },
     {
       title: "Vue.js 3",
@@ -45,13 +49,10 @@ export const AppState = reactive({
       title: "TailWind CSS",
       src: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg",
     },
-    {
-      title: "C-Sharp",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
-    },
+
     {
       title: "MySQL",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg",
+      src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
     },
     {
       title: "Scrum",
@@ -67,11 +68,19 @@ export const AppState = reactive({
     },
     {
       title: "Postman",
-      src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuser-images.githubusercontent.com%2F2676579%2F34940598-17cc20f0-f9be-11e7-8c6d-f0190d502d64.png&f=1&nofb=1&ipt=cf2e1538e56e2a46ac6d867dc51ca74988aa8f861ad0bbf88871c33d34b6b915&ipo=images",
+      src: "https://blog.scottlogic.com/smangan/assets/postman.png",
     },
     {
       title: "Figma",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    },
+    {
+      title: "FireBase",
+      src: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
+    },
+    {
+      title: "Trello",
+      src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
     },
   ],
 });

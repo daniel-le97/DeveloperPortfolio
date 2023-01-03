@@ -50,7 +50,7 @@
           Developer
         </p>
       </div>
-      <div class="col-md-6 text-end text-light">
+      <div id="heroText" class="col-md-6 text-end text-light">
            <p
           v-motion-slide-bottom
           :delay="600"
@@ -95,13 +95,13 @@ export default {
   props: {},
   setup(props) {
     onMounted(() => {
-      // paralaxx1();
+      // paralaxx1('heroText','heroText2');
     });
     const editable = ref({});
 
-    function paralaxx1() {
-      let text1 = document.getElementById("heroText");
-      let text2 = document.getElementById("heroText2");
+    function paralaxx1(el,el2) {
+      let text1 = document.getElementById(`${el}`);
+      let text2 = document.getElementById(`${el2}`);
       // console.log(text1);
       let prevScrollpos = window.scrollY;
       console.log(prevScrollpos);

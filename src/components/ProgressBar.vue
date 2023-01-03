@@ -17,7 +17,12 @@
       <img
         src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png"
         alt=""
-        class="progress bg-transparent floating"
+        class="progress bg-transparent floating tester1"
+      />
+      <img
+        src="https://www.shareicon.net/data/2017/06/13/887032_face_512x512.png"
+        alt=""
+        class="progress bg-transparent floating tester2"
       />
 
       <p class="position-absolute start-0 top-0 font-1 text-success">
@@ -66,6 +71,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.tester1{
+
+}
+
+
+#progress:hover{
+  .tester1{
+display: none
+}
+
+  .tester2{
+  display: block;
+
+}
+
+}
+.tester2{
+  display: none;
+
+}
 .floating {
   animation-name: floating;
   animation-duration: 3s;
