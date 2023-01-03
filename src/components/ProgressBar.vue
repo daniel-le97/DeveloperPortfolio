@@ -15,14 +15,14 @@
       class=""
     >
       <img
-        src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png"
-        alt=""
+        src="https://vignette.wikia.nocookie.net/hollowknight/images/9/94/Knight_godmaster.png/revision/latest?cb=20190129170812"
+        alt="Hollow Night"
         class="progress bg-transparent floating tester1"
       />
       <img
-        src="https://www.shareicon.net/data/2017/06/13/887032_face_512x512.png"
-        alt=""
-        class="progress bg-transparent floating tester2"
+        src="https://www.pinclipart.com/picdir/big/572-5722312_transparent-masks-clipart-soul-hollow-knight-shade-png.png"
+        alt="Hollow Night Shade"
+        class="progress bg-transparent floating tester2 "
       />
 
       <p class="position-absolute start-0 top-0 font-1 text-success">
@@ -79,19 +79,18 @@ export default {
 
 #progress:hover{
   .tester1{
-display: none
+    opacity: 0;
+    transition: 0.25s ease;
+
 }
 
   .tester2{
-  display: block;
-
+ opacity: 1;
+transition: all 0.25s ease;
 }
 
 }
-.tester2{
-  display: none;
 
-}
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -122,7 +121,18 @@ display: none
   height: 1px;
   background: rgb(250, 236, 236);
 }
+#progress{
+ 
+  position: relative;
+  .tester2{
+ opacity: 0;
+transition: all 0.25s ease;
+position: absolute;
+top: 0;
 
+
+}
+}
 #progress,
 #progress2 {
   transition: all 0.75s ease-out;
@@ -142,7 +152,7 @@ display: none
 
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    height: 75px;
+    height: 10px;
   }
 }
 </style>

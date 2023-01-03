@@ -15,6 +15,16 @@
   z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
 
+
+
+.list-group-item {
+  background: transparent;
+  border: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  color: #e6f1a9;
+}
+
 .font-2 {
   font-family: "Montserrat", sans-serif;
 }
@@ -78,6 +88,19 @@ form:invalid button[type="submit"] {
 //   padding-left: 1rem;
 //   padding-right: 1rem;
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $spacer-height: 20vw;
 $section1-bg-color: #ffffff;

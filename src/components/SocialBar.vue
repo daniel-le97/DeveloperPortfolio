@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid fixed-bottom d-none d-md-block">
-    <div class="row justify-content-between">
+    <div class="row my-3 my-md-0 justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
         <GitHubIcon />
         <LinkedInIcon class="linkedIn-icon" />
@@ -17,13 +17,12 @@
         </a>
       </div>
     </div>
-    <div class="row"></div>
   </div>
   <div class="container-fluid d-block d-md-none section-bubble5 py-4">
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center">
-        <GitHubIcon />
-        <LinkedInIcon />
+        <GitHubIcon class="github-LinkedIn" />
+        <LinkedInIcon class="github-LinkedIn" />
       </div>
       <div class="col-md-12 text-center">
         <p>Designed & Built by <b> Tung Le</b></p>
@@ -56,6 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .email {
   transform: rotate(90deg) + translateX(-50px) + translateY(-20px);
   transition: all 0.5s ease-out;

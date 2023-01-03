@@ -3,32 +3,17 @@
     <div class="container">
       <div class="section-title d-flex justify-content-between">
         <h1 v-motion-slide-visible-once-bottom :delay="300">About me</h1>
-
-        <!-- <div class="">
-          <p class="fs-3">//life motto <br> if(attempt == fail){ <br> remember()  <br> learn()     <br> retry() <br>  }</p>
-        </div> -->
       </div>
 
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
           <div class="card-container">
             <div class="image-card perspective-left">
               <div class="box box3">
-                <!-- <img
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            src="../../assets/img/Tungle/Tung Le.4.jpg"
-            class="img-fluid rounded profileImg elevation- oddboxinner"
-            alt=""
-          /> -->
                 <div class="oddboxinner elevation-6"></div>
               </div>
             </div>
           </div>
-          <!-- <div class="box box3">
-       
-          <div class="oddboxinner elevation-6"></div>
-     </div> -->
         </div>
 
         <div
@@ -37,7 +22,7 @@
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="px-md-5 font-2 text-start fs-5"
+            class="px-md-5 font-2 text-start about-me-text"
           >
             Hello! My name is Tung and I
             <b class="text-light darken-10">LOVE</b> design and creating. I
@@ -74,13 +59,13 @@
         </div>
         <div class="col-md-6 text-center">
           <p class="font-1 fs-4 text-warning">Creatures I'd die for</p>
-          <div class="d-flex justify-content-around p-2">
+          <div class="d-md-flex justify-content-around p-2">
             <img
               src="../../assets/img/Coco.png"
               alt=""
               width="240"
               height="240"
-              class="elevation-6 rounded"
+              class="elevation-6 rounded mb-2 mb-md-0"
             />
             <img
               src="../../assets/img/Goblin.png"
@@ -103,7 +88,8 @@
             I love drawing mandalas as a way of relaxation and creative
             meditation. Procreate is one of my favorite digital mediums of
             creating art. Since being caught by the web developer bug I've been
-            able to combine my love for art with developing beautiful and creative front-end applications and design styles.
+            able to combine my love for art with developing beautiful and
+            creative front-end applications and design styles.
           </p>
         </div>
 
@@ -143,7 +129,7 @@
               class="procreate-art perspective-right"
             />
           </div>
-        
+
           <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
             <img
               src="../../assets/img/Procreate/Turtle.png"
@@ -174,6 +160,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.about-me-text{
+  font-size: 1.25rem;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  font-size: 1rem;
+  }
+}
 .procreate-art {
   width: auto;
   height: 300px;
@@ -202,6 +195,10 @@ export default {
   height: 500px;
   margin: 15px;
   transform: rotate(-2deg);
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  height: 305px;
+  }
 }
 
 .image-card {
@@ -213,6 +210,11 @@ export default {
   background-size: cover;
   background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+    width: 240px;
+  height: 360px;
+  }
 }
 
 .perspective-left {

@@ -15,6 +15,9 @@ export default {
 <style lang="scss" scoped>
 i {
   transition: all 0.5s ease-out;
+  @media only screen and (max-width: 768px) {
+    font-size: 4rem!important;
+  }
 }
 i:hover {
   color: turquoise !important;

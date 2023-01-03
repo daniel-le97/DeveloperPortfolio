@@ -42,6 +42,10 @@ export const AppState = reactive({
       src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
     },
     {
+      title: "DotNet Core",
+      src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
+    },
+    {
       title: "BootStrap ",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg",
     },
@@ -81,6 +85,81 @@ export const AppState = reactive({
     {
       title: "Trello",
       src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
+    },
+  ],
+
+  devProjects: [
+    {
+      title: `SamadhiYogaIdaho`,
+      description: "Check out Below",
+      tech: [],
+      githubLink: "",
+      externalLink: "",
+    },
+    {
+      title: `RCMF`,
+      description: "Randy Carpenter Memorial Foundation website.",
+      tech: ["Vue", "BootStrap"],
+      githubLink: "",
+      externalLink: "",
+    },
+    {
+      title: ` SoftBall Website`,
+      description: "Website for Centennial HighSchool's Softball team ",
+      tech: ["Vue", "BootStrap"],
+      githubLink: "",
+      externalLink: "",
+    },
+  ],
+
+  archivedProjects: [
+    {
+      title: `I'm Game`,
+      description:
+        "Single page application to search and browse board games using Board Game Atlas's API ",
+      tech: ["Node Js", "Vue", "BootStrap", "MongoDb"],
+      githubLink: "",
+      externalLink: "",
+    },
+    {
+      title: `Tower`,
+      description:
+        "SPA app designed to help people get together with other users for events. Whether they are concerts, expos, or sporting events. VueJs with Vue-Router for the client. Express with Node.js and MongoDB with Mongoose to manage database and handling relationships of both one to many, and many to many objects. Identity management with Auth0. ",
+      tech: ["Node Js", "Vue", "BootStrap", "Auth0"],
+      githubLink: "",
+      externalLink: "https://thetower-f4he.onrender.com",
+    },
+    {
+      title: `Inspire`,
+      description:
+        "Inspiration is a gift, The Inspire application allows users to keep track of daily tasks and the weather with the help of a randomly generated quote and beautiful background image scenery",
+      tech: ["Node Js", "Vue", "BootStrap"],
+      githubLink: "",
+      externalLink: "",
+    },
+    {
+      title: `Net Work`,
+      description:
+        "SPA app,  an client interface that utilizes a social networking API. Demonstrating knowledge of the VueJS framework, creating an  utilizing Vue and Vue-Router, creating searches to the API utilizing query parameters, and working with Auth0 for identity management",
+      tech: ["Node Js", "Vue", "BootStrap"],
+      githubLink: "",
+      externalLink: "",
+    },
+    {
+      title: `Task Master`,
+      description:
+        "creating a task manager, where users can create multiple lists each with multiple items to complete on that list.They will demonstrate their understanding of the MVC Design pattern by completing this process utilizing services, controllers and models. In addition students will be able to persist data into local storage that will be retrieved on page refresh.",
+      tech: ["Node Js", "Vue", "BootStrap"],
+      githubLink: "",
+      externalLink: "https://tungle0319.github.io/TaskMaster/",
+    },
+    {
+      title: `Dimension Miner`,
+      description:
+        "A Cookie Clicker Clone that  demonstrates  understanding of working with the DOM and dynamically rendering data to the page. styling the page utilizing Bootstrap best practices to design the page.",
+      tech: ["HTML", "JavaScript", "BootStrap"],
+      githubLink: "",
+      externalLink: "https://tungle0319.github.io/DimensionMiner/",
     },
   ],
 });

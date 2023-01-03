@@ -1,35 +1,51 @@
 <template>
 <section id="contact" class="py-6 section-bubble4">
-  <div class="container">
+  <div class="container gap-5">
   <div class="row">
     <div class="col-md-12 text-center">
  <p class="display-3 font-1 text-light">Get In Touch</p>
  
     </div>
-    <div class="col-md-12">
-      <img src="https://www.modelocurriculum.net/wp-content/como-funciona-open-to-work.png" alt="" class="elevation-6 rounded-circle">
+  
+  </div>
+
+  <div class="row  position-relative my-5">
+
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="https://github.com/TungLe0319" target="_blank">
+        
+        <img src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only" alt="" class="elevation-6 rounded">
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://github.com/TungLe0319" target="_blank">
+        
+        <img src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only" alt="" class="elevation-6 rounded">
+      </a>
     </div>
   </div>
 </div>
+<ContactForm/>
 </section>
 </template>
 
 <script>
 
 import { onMounted, ref, watchEffect } from "vue";
+import ContactForm from "../ContactForm.vue";
 
 export default {
-props:{
-
-       },
-  setup(props) {
-    const editable = ref({});
- 
-    return {
-      editable,
-      }
-    }
-  }
+    props: {},
+    setup(props) {
+        const editable = ref({});
+        return {
+            editable,
+        };
+    },
+    components: { ContactForm }
+}
 </script>
 
 <style lang="scss" scoped>

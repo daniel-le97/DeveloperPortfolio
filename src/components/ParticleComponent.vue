@@ -54,7 +54,7 @@
           direction: 'none',
           enable: true,
           outMode: 'bounce',
-          random: false,
+          random: true,
           speed: 1.5,
           straight: false,
         },
@@ -64,13 +64,13 @@
             enable: true,
             area: 800,
           },
-          value: 100,
+          value: 200,
         },
         opacity: {
           value: 0.2,
         },
         shape: {
-          type: 'none',
+          type: 'circle',
         },
         size: {
           random: true,

@@ -2,7 +2,9 @@
   <header>
     <Navbar class="fixed-top" id="nav" />
   </header>
-  <main>
+  <main><div class="anime-container">
+ 
+</div>
     <router-view />
   </main>
 </template>
