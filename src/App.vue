@@ -1,6 +1,6 @@
 <template>
   <header>
-    <Navbar class="fixed-top " id="nav"  />
+    <Navbar class="fixed-top" id="nav" />
   </header>
   <main>
     <router-view />
@@ -16,20 +16,20 @@ export default {
   setup() {
     onMounted(() => {
       // hideOnScroll();
+
       hideOnScrollTest();
     });
     function hideOnScrollTest() {
       let nav = document.querySelector("#nav");
-      
+
       let prevScrollpos = window.scrollY;
-// console.log(nav);
+      // console.log(nav);
       window.onscroll = function () {
         let currentScrollPos = window.scrollY;
         if (prevScrollpos > currentScrollPos) {
           nav.style.top = "0";
         } else {
           nav.style.top = "-62px";
-      
         }
         prevScrollpos = currentScrollPos;
       };
@@ -45,10 +45,8 @@ export default {
 <style lang="scss">
 @import "./assets/scss/main.scss";
 
-
-
 #nav {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 
 :root {

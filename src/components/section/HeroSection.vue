@@ -143,7 +143,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero-text-2 {
-  transition: all 0.25s ease;
+  transition: all 0.25s ease-out;
 }
 .hero-text {
   z-index: 9999;
@@ -156,15 +156,15 @@ export default {
   }
 }
 #heroText {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 
 .test {
-  transition: all 1.25s ease;
+  transition: all 1.25s ease-out;
   transform: translateY(240px);
 }
 .test1 {
-  transition: all 1.25s ease;
+  transition: all 1.25s ease-out;
   transform: translateY(0px);
 }
 #hero {

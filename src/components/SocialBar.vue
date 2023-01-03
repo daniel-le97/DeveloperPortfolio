@@ -3,7 +3,7 @@
     <div class="row justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
         <GitHubIcon />
-         <LinkedInIcon class="linkedIn-icon" />
+        <LinkedInIcon class="linkedIn-icon" />
       </div>
       <div
         class="col-1 text-center d-flex justify-content-center align-items-center"
@@ -58,12 +58,12 @@ export default {
 <style lang="scss" scoped>
 .email {
   transform: rotate(90deg) + translateX(-50px) + translateY(-20px);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .email:hover {
   transform: rotate(90deg) + translateX(-70px) + translateY(-20px);
   color: turquoise !important;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .email-icon:after {
   content: "";
@@ -82,7 +82,7 @@ export default {
   background-color: #fff;
 }
 i {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 i:hover {
   transform: translateY(-5px);

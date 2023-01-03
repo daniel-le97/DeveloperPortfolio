@@ -11,13 +11,26 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <img
+
+          <div class="card-container">
+            <div class="image-card perspective-left ">
+
+                <div class="box box3">
+           <!-- <img
             v-motion-slide-visible-once-bottom
             :delay="300"
             src="../../assets/img/Tungle/Tung Le.4.jpg"
-            class="img-fluid rounded profileImg elevation-6"
+            class="img-fluid rounded profileImg elevation- oddboxinner"
             alt=""
-          />
+          /> -->
+          <div class="oddboxinner elevation-6"></div>
+     </div>
+            </div>
+          </div>
+     <!-- <div class="box box3">
+       
+          <div class="oddboxinner elevation-6"></div>
+     </div> -->
         </div>
 
         <div
@@ -28,23 +41,26 @@
             :delay="300"
             class="px-md-5 font-2 text-start fs-5"
           >
-            Hello! My name is Tung and I enjoy designing and creating. My
-            interest in web development started back in 2015 when i I'm a
-            full-stack software developer with a passion for creativity, problem
-            solving and learning something new every day. I immediately fell in
-            love with coding the moment i started with "Hello World!" I was
-            instantly hooked. I've now come to build full-stack applications
-            using a variety of languages,frameworks,and tools referenced below.
-            I have a passion for everything in software development from the
-            design aspects of the frontend to the logic and puzzles of the
-            backend both equally satisfying to overcome the challenges each has.
-            More importantly I have a passion for working with people that share
-            the same love for problem-solving, and love of code!
+            Hello! My name is Tung and I <b 
+            
+            class="text-light darken-10">LOVE</b> design and creating.
+             I don't have any  specific style. I prefer to adapt to each project and use it as to new things  and expand my knowledge, Keeping the good and learning from the bad.
+            
+            I was
+            immeditaley captivated with web development upon my first
+            <b class="text-light darken-10">"Hello World!" </b> 1 year ago. I've now come to
+            build full-stack applications using a variety of
+            languages,frameworks,and tools referenced below. I have a passion
+            for everything in software development from the design aspects of
+            the frontend to the logic and puzzles of the backend both equally
+            satisfying to overcome the challenges each has. More importantly I
+            have a passion for working with people that share the same love for
+            problem-solving, and love of code!
           </p>
         </div>
       </div>
     </div>
-   <!-- <BlockQuote/> -->
+    <!-- <BlockQuote/> -->
   </section>
 </template>
 
@@ -64,4 +80,59 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.box{
+
+ 
+background-image: url('../../assets/img/Tungle/Tung Le.4.jpg');
+  border: solid black;
+  border-color: black;
+background-position: center;
+background-size: cover;
+}
+
+.box3{
+  border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  transform: rotate(2deg);
+}
+
+.oddboxinner{
+  height: 500px;
+  margin:15px;
+  transform: rotate(-2deg);
+}
+
+.image-card {
+
+
+
+  width: 440px;
+  height: 560px;
+  padding: 8px;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.perspective-left {
+  transform: perspective(1500px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-left:hover {
+  transform: perspective(3000px) rotateY(5deg);
+}
+
+.perspective-right {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-right:hover {
+  transform: perspective(3000px) rotateY(-5deg);
+}
+
+</style>

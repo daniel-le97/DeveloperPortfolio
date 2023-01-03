@@ -18,34 +18,22 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <li>
-          <button
-            @click="scrollTo(1)"
-            class="btn text-light font-1 fs-4 "
-          >
+          <button @click="scrollTo(1)" class="btn text-light font-1 fs-4">
             About
           </button>
         </li>
         <li>
-          <button
-            @click="scrollTo(2)"
-            class="btn text-light font-1 fs-4 "
-          >
+          <button @click="scrollTo(2)" class="btn text-light font-1 fs-4">
             Experience
           </button>
         </li>
         <li>
-          <button
-            @click="scrollTo(3)"
-            class="btn text-light font-1 fs-4 "
-          >
+          <button @click="scrollTo(3)" class="btn text-light font-1 fs-4">
             Portfolio
           </button>
         </li>
         <li>
-          <button
-            @click="scrollTo(4)"
-            class="btn text-light font-1 fs-4 "
-          >
+          <button @click="scrollTo(4)" class="btn text-light font-1 fs-4">
             Contact
           </button>
         </li>
@@ -85,14 +73,11 @@ export default {
         let elementId;
         if (x == 1) {
           elementId = "about";
-        } else
-        if (x == 2) {
+        } else if (x == 2) {
           elementId = "experience";
-        } else
-        if (x == 3) {
+        } else if (x == 3) {
           elementId = "portfolio";
-        } else
-        if (x == 4) {
+        } else if (x == 4) {
           elementId = "contact";
         }
 
@@ -112,12 +97,12 @@ export default {
 a:hover {
   text-decoration: none;
 }
-.btn{
-transition: all 0.5s ease;
+.btn {
+  transition: all 0.5s ease-out;
 }
 .btn:hover {
   transform: scale(1.1);
- 
+
   color: turquoise !important;
 }
 .nav-link {

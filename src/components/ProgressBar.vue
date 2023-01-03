@@ -1,12 +1,6 @@
 <template>
   <div class="progressContainer">
-     <div
-    
-      id="progress2"
-      class="progress-2 "
-    >
-     
-    </div>
+    <div id="progress2" class="progress-2"></div>
     <div
       v-motion
       :initial="{
@@ -58,12 +52,7 @@ export default {
         "progress"
       ).style.transform = `translateX(${percent})`;
 
-    
-      document.getElementById(
-        "progress2"
-      ).style.width = percent
-
-    
+      document.getElementById("progress2").style.width = percent;
     }
 
     watchEffect(() => {});
@@ -77,18 +66,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
- 
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out-in-out;
 }
- 
+
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .placeholder {
@@ -103,15 +97,16 @@ export default {
   background: rgb(250, 236, 236);
 }
 
-#progress ,#progress2{
-  transition: all 0.75s ease;
+#progress,
+#progress2 {
+  transition: all 0.75s ease-out;
 }
 .progress {
   height: 100px;
   transform: translateX(-65px);
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  height: 75px;
+  @media only screen and (max-width: 768px) {
+    height: 75px;
   }
 }
 .progress-2 {
@@ -120,8 +115,8 @@ export default {
   background: #e6cb7a;
 
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  height: 75px;
+  @media only screen and (max-width: 768px) {
+    height: 75px;
   }
 }
 </style>
