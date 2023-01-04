@@ -19,20 +19,39 @@
           </a>
         </div>
         <div class="col-md-5 position-relative">
-          <p
-            v-motion-slide-visible-bottom
-            :delay="500"
-            class="font-1 fs-5 text-warning mt-3 mt-md-0"
-          >
-            Featured Project
-          </p>
-          <p
-            v-motion-slide-visible-bottom
-            :delay="600"
-            class="font-1 fs-3 text-light text-shadow"
-          >
-            SamadhiYogaIdaho
-          </p>
+          <div class="d-flex">
+            <div>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="500"
+                class="font-1 fs-5 text-warning mt-3 mt-md-0"
+              >
+                Featured Project
+              </p>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="600"
+                class="font-1 fs-3 text-light text-shadow mb-1"
+              >
+                SamadhiYogaIdaho
+              </p>
+            </div>
+            <div class="ms-4">
+              <a
+                v-motion-slide-visible-bottom
+                :delay="600"
+                href="https://www.samadhiyogaidaho.com/#/"
+                class="mb-2"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+                  alt="external Link"
+                  title="site Link"
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+          </div>
+
           <div
             v-motion-slide-visible-bottom
             :delay="700"
@@ -101,25 +120,45 @@
       <!-- SECTION BETTER AFTER BOOKS -->
 
       <div class="row my-6" style="">
-        <div class="col-md-5 position-relative text-end">
-          <p
-            v-motion-slide-visible-bottom
-            :delay="500"
-            class="font-1 fs-5 text-warning mt-3 mt-md-0"
-          >
-            Featured Project
-          </p>
-          <p
-            v-motion-slide-visible-bottom
-            :delay="600"
-            class="font-1 fs-3 text-light text-shadow"
-          >
-            Better After Books
-          </p>
+        <div class="col-md-5 position-relative text-end order-1 order-md-0">
+           <div class="d-flex justify-content-end">
+              <div class="me-4">
+              <a
+                v-motion-slide-visible-bottom
+                :delay="600"
+                target="_blank"
+                href="https://betterafterbooks.apps.devopportunities.dev/"
+                class="mb-2"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+                  alt="external Link"
+                  title="site Link"
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+            <div>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="500"
+                class="font-1 fs-5 text-warning mt-3 mt-md-0"
+              >
+                Featured Project
+              </p>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="600"
+                class="font-1 fs-3 text-light text-shadow mb-1"
+              >
+               Better After Books
+              </p>
+            </div>
+          
+          </div>
           <div
             v-motion-slide-visible-bottom
             :delay="700"
-            class="card elevation-6 p-2 border-0 bg-primary text-light  project-description-flip w-100"
+            class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
             style="z-index: 9"
           >
             <div
@@ -178,7 +217,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 order-0 order-md-1">
           <a
             href="https://betterafterbooks.apps.devopportunities.dev/"
             target="_blank"
@@ -208,20 +247,39 @@
           </a>
         </div>
         <div class="col-md-5 position-relative">
-          <p
-            v-motion-slide-visible-bottom
-            :delay="500"
-            class="font-1 fs-5 text-warning mt-3 mt-md-0"
-          >
-            Featured Project
-          </p>
-          <p
-            v-motion-slide-visible-bottom
-            :delay="600"
-            class="font-1 fs-3 text-light text-shadow"
-          >
-            Keepr
-          </p>
+           <div class="d-flex">
+            <div>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="500"
+                class="font-1 fs-5 text-warning mt-3 mt-md-0"
+              >
+                Featured Project
+              </p>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="600"
+                class="font-1 fs-3 text-light text-shadow mb-1"
+              >
+                Keepr
+              </p>
+            </div>
+            <div class="ms-4">
+              <a
+                v-motion-slide-visible-bottom
+                :delay="600"
+                target="_blank"
+                href="https://keepr-project-demo.onrender.com"
+                class="mb-2"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+                  alt="external Link"
+                  title="site Link"
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+          </div>
           <div
             v-motion-slide-visible-bottom
             :delay="700"
@@ -274,21 +332,40 @@
 
       <!-- SECTION Tower -->
       <div class="row my-6" style="">
-        <div class="col-md-5 position-relative text-end">
-          <p
-            v-motion-slide-visible-bottom
-            :delay="500"
-            class="font-1 fs-5 text-warning mt-3 mt-md-0"
-          >
-            Featured Project
-          </p>
-          <p
-            v-motion-slide-visible-bottom
-            :delay="600"
-            class="font-1 fs-3 text-light text-shadow"
-          >
-            Tower
-          </p>
+        <div class="col-md-5 position-relative text-end order-1 order-md-0">
+           <div class="d-flex justify-content-end">
+             <div class="me-4">
+              <a
+                v-motion-slide-visible-bottom
+                :delay="600"
+                href="https://thetower-f4he.onrender.com"
+                class="mb-2"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+                  alt="external Link"
+                  title="site Link"
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+            <div>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="500"
+                class="font-1 fs-5 text-warning mt-3 mt-md-0"
+              >
+                Featured Project
+              </p>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="600"
+                class="font-1 fs-3 text-light text-shadow mb-1"
+              >
+               Tower
+              </p>
+            </div>
+           
+          </div>
           <div
             v-motion-slide-visible-bottom
             :delay="700"
@@ -339,7 +416,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 order-0 order-md-1">
           <a href="https://thetower-f4he.onrender.com" target="_blank">
             <img
               v-motion-slide-visible-bottom
@@ -354,7 +431,7 @@
       <!-- !SECTION Tower -->
     </div>
 
-    <div class="container" style="margin-top: 20rem">
+    <div class="container mt-6" >
       <!-- SECTION ArchivedProjects -->
       <!-- <div class="row g-3">
         <div class="col-md-12 text-center">
@@ -492,7 +569,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- .devsopportunities-image {
+.devsopportunities-image {
   height: 100px;
   width: 100px;
   img {
@@ -552,24 +629,31 @@ export default {
   filter: brightness(120%);
   cursor: pointer;
 }
+.mt-6{
+  margin-top: 10rem;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  margin-top: 3rem;
+  }
+}
 .my-6 {
   margin-top: 17rem;
   margin-bottom: 15rem;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+    margin-top: 4rem;
+  margin-bottom: 4rem;
+  }
 }
 
 ul {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
 }
-
 
 img {
   transition: all 0.5s ease-out;
 
-  @media only screen and (max-width: 768px) {
-    filter: brightness(50%);
-    filter: grayscale(90);
-  }
 }
 
 img:hover {

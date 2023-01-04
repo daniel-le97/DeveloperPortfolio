@@ -1,4 +1,52 @@
 <template>
+  <div class="d-block d-md-none">
+       <div class="content-hover border-0">
+      <div class="d-flex justify-content-between">
+      
+        <div class="d-flex align-items-center">
+          <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
+          <a
+            v-motion-slide-visible-once-bottom
+            :delay="600"
+            href=""
+            class="ms-3"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+              alt="External Link to Webpage"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="">
+        <p v-motion-slide-visible-once-bottom :delay="700" class="fs-3 font-1">
+          {{ project.title }}
+        </p>
+        <p
+          v-motion-slide-visible-once-bottom
+          :delay="900"
+          class="text-light font-2"
+        >
+          {{ project.description }}
+        </p>
+      </div>
+
+      <div class="">
+        <ul class="list-group list-group-horizontal">
+          <li
+            class="list-group-item text-light darken-10 bg-transparent border-0"
+            v-for="t in project.tech"
+          >
+            {{ t }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+
   <div class="box rounded elevation-6 border-0">
     <div class="content border-0">
       <img :src="`${project.img}`" />
@@ -51,8 +99,10 @@
         </ul>
       </div>
     </div>
+
   </div>
 
+  
  
 </template>
 

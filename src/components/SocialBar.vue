@@ -19,15 +19,18 @@
       </div>
     </div>
   </div>
+
+  <!-- SECTION FOOTER  -->
   <div class="container-fluid section-bubble5 py-4 test" >
     <div class="row justify-content-center">
-      <div class="col-12 d-flex justify-content-center icons">
+      <div class="col-12 d-flex justify-content-center icons d-md-none">
            <PhoneIcon />
         <GitHubIcon  />
         <LinkedInIcon  />
       </div>
       <div class="col-md-12 text-center">
         <p>Designed & Built by <b> Tung Le</b></p>
+         <p>Copyright &copy; 2023 Tung Le</p>
       </div>
     </div>
   </div>

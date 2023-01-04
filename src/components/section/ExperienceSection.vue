@@ -13,7 +13,7 @@
 
       <!-- SECTION EDUCATION -->
       <div class="row d-flex justify-content around">
-        <div class="col-md-12">
+        <div class="col-md-12 d-flex justify-content-between">
           <div class="section-title">
             <p
               v-motion-slide-visible-once-bottom
@@ -23,6 +23,7 @@
               Education
             </p>
           </div>
+          
         </div>
         <div class="col-md-6">
           <a
@@ -73,28 +74,52 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
+ <div class="row">
+        <div class="col-md-4">
+          <a href="https://github.com/TungLe0319" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
+              alt=""
+              class="elevation-6 rounded"
+            />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://github.com/TungLe0319" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
+              alt=""
+              class="elevation-6 rounded"
+            />
+          </a>
+        </div>
+      </div>
+
+
+
+
         <div class="col-md-12">
           <ul class="d-md-flex justify-content-between gap-5 g-5">
             <li
-              class="list-group-item font-2 fs-3 filter-button active "
+              class="list-group-item font-2 fs-3 filter-button active  selectable rounded"
               @click="filterImages('reset', $event)"
             >
               All
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button"
+              class="list-group-item font-2 fs-3 filter-button selectable rounded"
               @click="filterImages('lang', $event)"
             >
               Languages
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button"
+              class="list-group-item font-2 fs-3 filter-button selectable rounded"
               @click="filterImages('tech', $event)"
             >
               Technologies
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button"
+              class="list-group-item font-2 fs-3 filter-button selectable rounded"
               @click="filterImages('framework', $event)"
             >
               Frameworks

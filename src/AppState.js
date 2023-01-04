@@ -20,118 +20,117 @@ export const AppState = reactive({
     {
       title: "HTML5",
       src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
-      type:'lang',
-      id:1
-    
+      type: "lang",
+      id: 1,
     },
     {
       title: "CSS3",
       src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
-      type:'lang',
-      id:2
+      type: "lang",
+      id: 2,
     },
     {
       title: "JavaScript ES6",
       src: "https://www.britefish.net/wp-content/uploads/2019/06/logo-javascript-2-1024x1024.png",
-      type:'lang',
-      id:3
+      type: "lang",
+      id: 3,
     },
     {
       title: "C-Sharp",
       src: "https://1.bp.blogspot.com/-U8C6UaajxeA/XV1J6Yo6x2I/AAAAAAAABQo/3v2OEgTGn9ggUqArXtGZpl_6zqbo09nmACLcBGAs/s1600/csharp_logo.png",
-      type:'lang',
-      id:4
+      type: "lang",
+      id: 4,
     },
     {
       title: "Node Js",
       src: "https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png",
-      type:'tech',
-      id:5
+      type: "tech",
+      id: 5,
     },
     {
       title: "Vue.js 3",
       src: "https://coder.clothing/images/stories/virtuemart/product/vuejs-logo.png",
-      type:'framework',
-      id:6
+      type: "framework",
+      id: 6,
     },
     {
       title: "DotNet Core",
       src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
-      type:'tech',
-      id:7
+      type: "tech",
+      id: 7,
     },
     {
       title: "BootStrap ",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/420px-Bootstrap_logo.svg.png",
-      type:'lang',
-      id:8
+      type: "lang",
+      id: 8,
     },
     {
       title: "TailWind CSS",
       src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
-      type:'lang',
-      id:9
+      type: "lang",
+      id: 9,
     },
     {
       title: "Sass",
       src: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
-      type:'lang',
-      id:10
+      type: "lang",
+      id: 10,
     },
 
     {
       title: "MySQL",
       src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
-      type:'',
-      id:11
+      type: "",
+      id: 11,
     },
     {
       title: "Scrum",
       src: "https://i.pinimg.com/originals/71/26/cd/7126cdceaae0b3225e4af95d593a7236.png",
-      type:'tech',
-      id:12
+      type: "tech",
+      id: 12,
     },
     {
       title: "MongoDb",
       src: "http://www.lafabriquedecode.com/blog/wp-content/uploads/2013/04/mongo_logo.png",
-      type:'tech',
-      id:13
+      type: "tech",
+      id: 13,
     },
     {
       title: "Github",
       src: "https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png",
-      type:'tech',
-      id:14
+      type: "tech",
+      id: 14,
     },
     {
       title: "NPM",
       src: "https://authy.com/wp-content/uploads/npm-logo.png",
-      type:'tech',
-      id:15
+      type: "tech",
+      id: 15,
     },
     {
       title: "Postman",
       src: "https://blog.scottlogic.com/smangan/assets/postman.png",
-      type:'tech',
-      id:16
+      type: "tech",
+      id: 16,
     },
     {
       title: "Figma",
       src: "https://jenniferzlu.com/img/logo/figma.png",
-      type:'tech',
-      id:17
+      type: "tech",
+      id: 17,
     },
     {
       title: "FireBase",
       src: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
-      type:'tech',
-      id:18
+      type: "tech",
+      id: 18,
     },
     {
       title: "Trello",
       src: "https://pluspng.com/img-png/trello-png-trello-png-1600.png",
-      type:'tech',
-      id:19
+      type: "tech",
+      id: 19,
     },
   ],
 
@@ -158,7 +157,7 @@ export const AppState = reactive({
       tech: ["Vue", "BootStrap"],
 
       externalLink: "",
-      img: "",
+      img: "https://cdn.discordapp.com/attachments/1051960755311890454/1060304889227509820/image.png",
     },
   ],
 
