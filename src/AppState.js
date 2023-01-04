@@ -56,19 +56,19 @@ export const AppState = reactive({
     {
       title: "DotNet Core",
       src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
-      type: "tech",
+      type: "framework",
       id: 7,
     },
     {
       title: "BootStrap ",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/420px-Bootstrap_logo.svg.png",
-      type: "lang",
+      type: "framework",
       id: 8,
     },
     {
       title: "TailWind CSS",
       src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
-      type: "lang",
+      type: "framework",
       id: 9,
     },
     {
@@ -81,7 +81,7 @@ export const AppState = reactive({
     {
       title: "MySQL",
       src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
-      type: "",
+      type: "database",
       id: 11,
     },
     {
@@ -93,7 +93,7 @@ export const AppState = reactive({
     {
       title: "MongoDb",
       src: "http://www.lafabriquedecode.com/blog/wp-content/uploads/2013/04/mongo_logo.png",
-      type: "tech",
+      type: "database",
       id: 13,
     },
     {
@@ -123,7 +123,7 @@ export const AppState = reactive({
     {
       title: "FireBase",
       src: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
-      type: "tech",
+      type: "database",
       id: 18,
     },
     {

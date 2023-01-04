@@ -101,28 +101,34 @@
         <div class="col-md-12">
           <ul class="d-md-flex justify-content-between gap-5 g-5">
             <li
-              class="list-group-item font-2 fs-3 filter-button active  selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button active  selectable rounded"
               @click="filterImages('reset', $event)"
             >
               All
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button selectable rounded"
               @click="filterImages('lang', $event)"
             >
               Languages
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button selectable rounded"
               @click="filterImages('tech', $event)"
             >
               Technologies
             </li>
             <li
-              class="list-group-item font-2 fs-3 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button selectable rounded"
               @click="filterImages('framework', $event)"
             >
-              Frameworks
+              Frameworks & Libraries
+            </li>
+            <li
+              class="list-group-item font-2 fs-5 filter-button selectable rounded"
+              @click="filterImages('database', $event)"
+            >
+              Databases
             </li>
           </ul>
         </div>
@@ -357,7 +363,7 @@ export default {
 ul {
   counter-reset: index;
   padding: 0;
-  max-width: 500px;
+
 }
 
 /* List element */
