@@ -4,19 +4,19 @@
       <div class="section-title d-flex">
         <h1 class="font-1 text-light">Portfolio</h1>
       </div>
+<!-- SECTION SAMADHIYOGAIDAHO -->
 
       <div class="row my-5">
         <div class="col-md-7">
           <a href="https://www.samadhiyogaidaho.com/#/" target="_blank">
- <img
-            v-motion-slide-visible-bottom
-            :delay="500"
-            src="../../assets/img/portfolio/samadhiApp.png"
-            class="img-fluid elevation-6 rounded"
-            alt=""
-          />
+            <img
+              v-motion-slide-visible-bottom
+              :delay="500"
+              src="../../assets/img/portfolio/samadhiApp.png"
+              class="img-fluid elevation-6 rounded"
+              alt=""
+            />
           </a>
-         
         </div>
         <div class="col-md-5 position-relative">
           <p
@@ -43,9 +43,17 @@
               :delay="800"
               class="card-body font-2"
             >
-              Custom Designed and built Website for a small yoga business owner,
-              intergrated Ghost for CMS Publishing for her blog as well as
-              configuring MailGun for Email Service. Allows her
+              Custom Designed and built website for a small yoga business owner
+              client. intergrated Ghost for CMS Publishing for her blog as well
+              as configuring MailGun for Email Service. The app will allow users
+              to easily browse and sign up for classes, view class schedules,
+              and purchase memberships and packages. It will also include a
+              feature for teachers to manage their schedules and events and for
+              the business to manage customer information. The SPA will be
+              optimized for both desktop and mobile use, making it convenient
+              for users to access from any device. Overall, the goal of the app
+              is to provide a seamless and convenient experience for both the
+              business and its customers.
             </div>
 
             <ul class="list-group list-group-horizontal bg-transparent">
@@ -88,6 +96,9 @@
           </div>
         </div>
       </div>
+
+      <!-- !SECTION SAMADHIYOGAIDAHO -->
+<!-- SECTION BETTER AFTER BOOKS -->
 
       <div class="row my-6" style="">
         <div class="col-md-5 position-relative text-end">
@@ -168,103 +179,128 @@
           </div>
         </div>
         <div class="col-md-7">
-        <a href="https://betterafterbooks.apps.devopportunities.dev/" target="_blank">
-   <img
+          <a
+            href="https://betterafterbooks.apps.devopportunities.dev/"
+            target="_blank"
+          >
+            <img
               v-motion-slide-visible-bottom
               :delay="500"
               src="../../assets/img/portfolio/BetterAfterBooks.png"
               class="img-fluid elevation-5 rounded"
               alt=""
             />
-        </a>
-         
-       
-        </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-md-7">
-          <a href="https://keepr-project-demo.onrender.com">
- <img
-            v-motion-slide-visible-bottom
-            :delay="500"
-            src="../../assets/img/portfolio/KeeprSS.png"
-            class="img-fluid elevation-6 rounded"
-            alt=""
-          />
           </a>
-         
-        </div>
-        <div class="col-md-5 position-relative">
-          <p
-            v-motion-slide-visible-bottom
-            :delay="500"
-            class="font-1 fs-5 text-warning"
-          >
-            Featured Project
-          </p>
-          <p
-            v-motion-slide-visible-bottom
-            :delay="600"
-            class="font-1 fs-3 text-light text-shadow"
-          >
-            Keepr
-          </p>
-          <div
-            v-motion-slide-visible-bottom
-            :delay="700"
-            class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
-          >
-            <div
-              v-motion-slide-visible-bottom
-              :delay="800"
-              class="card-body font-2"
-            >
-              Keepr is a social network that allows users to visually share and
-              discover new interests by posting images or videos to their own,
-              or others', collections (i.e., a collection of 'vaults,' usually
-              with a common theme) and browsing what other users have kept.
-              Demonstrates a working knowledge of building full-stack
-              applications. Utilizing a VueJs frontend with Vue-Router to manage
-              the DOM. On the server-side, using DotNet WebApi for their server
-              and implement the Repository pattern to communicate with their
-              database. In addition, Auth0 for user management, Dapper as an
-              ORM, and a MySQL server for their database.
-            </div>
-
-            <ul class="list-group list-group-horizontal bg-transparent">
-              <li
-                v-motion-slide-visible-bottom
-                :delay="300"
-                class="list-group-item"
-              >
-                HTML
-              </li>
-              <li
-                v-motion-slide-visible-bottom
-                :delay="300"
-                class="list-group-item"
-              >
-                CSS
-              </li>
-              <li
-                v-motion-slide-visible-bottom
-                :delay="300"
-                class="list-group-item"
-              >
-                Javascript
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
+      <!-- !SECTION BETTER AFTER BOOKS -->
+<!-- SECTION Keepr -->
+<div class="row my-5">
+  <div class="col-md-7">
+    <a 
+    target="_blank"
+    href="https://keepr-project-demo.onrender.com">
+    <img
+    v-motion-slide-visible-bottom
+    :delay="500"
+    src="../../assets/img/portfolio/KeeprSS.png"
+    class="img-fluid elevation-6 rounded"
+    alt=""
+    />
+  </a>
+</div>
+<div class="col-md-5 position-relative">
+  <p
+  v-motion-slide-visible-bottom
+  :delay="500"
+  class="font-1 fs-5 text-warning"
+  >
+  Featured Project
+</p>
+<p
+v-motion-slide-visible-bottom
+:delay="600"
+class="font-1 fs-3 text-light text-shadow"
+>
+Keepr
+</p>
+<div
+v-motion-slide-visible-bottom
+:delay="700"
+class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
+>
+<div
+v-motion-slide-visible-bottom
+:delay="800"
+class="card-body font-2"
+>
+Keepr is a social network that allows users to visually share and
+discover new interests by posting images or videos to their own,
+or others', collections (i.e., a collection of 'vaults,' usually
+with a common theme) and browsing what other users have kept.
+Demonstrates a working knowledge of building full-stack
+applications. Utilizing a VueJs frontend with Vue-Router to manage
+the DOM. On the server-side, using DotNet WebApi for their server
+and implement the Repository pattern to communicate with their
+database. In addition, Auth0 for user management, Dapper as an
+ORM, and a MySQL server for their database.
+</div>
+
+<ul class="list-group list-group-horizontal bg-transparent">
+  <li
+  v-motion-slide-visible-bottom
+  :delay="300"
+  class="list-group-item"
+  >
+  HTML
+</li>
+<li
+v-motion-slide-visible-bottom
+:delay="300"
+class="list-group-item"
+>
+CSS
+</li>
+<li
+v-motion-slide-visible-bottom
+:delay="300"
+class="list-group-item"
+>
+Javascript
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- !SECTION Keepr -->
+
+
+
     </div>
 
     <div class="container" style="margin-top: 20rem">
+      <!-- SECTION ArchivedProjects -->
       <div class="row g-3">
         <div class="col-md-12 text-center">
           <p class="font-1 fs-2 text-warning">Other Noteworthy Projects</p>
-          <p class="font-2  text-light darken-10"> Please Note that some of these projects are hosted on <a target="_blank" href="https://render.com/" class="bg-light rounded p-2"> <img src="https://techcrunch.com/wp-content/uploads/2019/10/render-logo-wordmark.png?w=764" alt="Render Logo" title="Render Logo" width="150" height="50"> </a> as such can take up to <b>1-2 minutes</b> to fully load. <br> I appreciate your patience and hope you enjoy any of my projects.</p>
+          <p class="font-2 text-light darken-10">
+            Please Note that some of these projects are hosted on
+            <a
+              target="_blank"
+              href="https://render.com/"
+              class="bg-light rounded p-2"
+            >
+              <img
+                src="https://techcrunch.com/wp-content/uploads/2019/10/render-logo-wordmark.png?w=764"
+                alt="Render Logo"
+                title="Render Logo"
+                width="150"
+                height="50"
+              />
+            </a>
+            as such can take up to <b>1-2 minutes</b> to fully load. <br />
+            I appreciate your patience and hope you enjoy any of my projects.
+          </p>
         </div>
 
         <div class="col-md-4" v-for="a in archivedProjects">
@@ -286,6 +322,7 @@
                   :delay="600"
                   :href="a.externalLink"
                   class="ms-3"
+                    target="_blank"
                 >
                   <img
                     src="https://cdn-icons-png.flaticon.com/512/5873/5873833.png"
@@ -298,7 +335,11 @@
             </div>
 
             <div class="">
-              <p v-motion-slide-visible-once-bottom :delay="700" class="fs-3 font-1">
+              <p
+                v-motion-slide-visible-once-bottom
+                :delay="700"
+                class="fs-3 font-1"
+              >
                 {{ a.title }}
               </p>
               <p
@@ -322,21 +363,23 @@
           </div>
         </div>
       </div>
-      <div id="devProjects"  class="row g-3 my-5">
-        <div class="col-md-12 text-center d-flex align-items-center justify-content-center">
-           <div
+      <!-- !SECTION ArchivedProjects -->
+     <!-- SECTION LLC PROJECTS -->
+      <div id="devProjects" class="row g-3 my-5">
+        <div
+          class="col-md-12 text-center d-flex align-items-center justify-content-center"
+        >
+          <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6 d-none d-md-block"
           >
-            <img
-              src="../../assets/img/LLCLogo.png"
-              alt="LLC Logo"
-              class=""
-            />
+            <img src="../../assets/img/LLCLogo.png" alt="LLC Logo" class="" />
           </div>
-          <p class="font-1 fs-2 text-warning ms-4">Projects & Works done under DevsOpportunities LLC:</p>
+          <p class="font-1 fs-2 text-warning ms-4">
+            Projects & Works done under DevsOpportunities LLC:
+          </p>
         </div>
 
-    <div class="col-md-4" v-for="a in devProjects">
+        <div class="col-md-4" v-for="a in devProjects">
           <div
             v-motion-slide-visible-once-bottom
             :delay="300"
@@ -367,7 +410,11 @@
             </div>
 
             <div class="">
-              <p v-motion-slide-visible-once-bottom :delay="700" class="fs-3 font-1">
+              <p
+                v-motion-slide-visible-once-bottom
+                :delay="700"
+                class="fs-3 font-1"
+              >
                 {{ a.title }}
               </p>
               <p
@@ -390,8 +437,8 @@
             </div>
           </div>
         </div>
-
       </div>
+     <!-- !SECTION LLC PROJECTS -->
     </div>
   </section>
 </template>
@@ -406,15 +453,14 @@ export default {
   props: {},
   setup(props) {
     const editable = ref({});
-   
+
     onMounted(() => {});
     watchEffect(() => {});
     return {
-
       editable,
       projects: computed(() => AppState.portfolioImages),
       archivedProjects: computed(() => AppState.archivedProjects),
-      devProjects:computed(() => AppState.devProjects),
+      devProjects: computed(() => AppState.devProjects),
     };
   },
   components: { GitHubIcon },
@@ -422,10 +468,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 .devsopportunities-image {
-
   height: 100px;
   width: 100px;
   img {
@@ -433,8 +476,6 @@ export default {
     width: 100px;
   }
 }
-
-
 
 .scene {
   width: 1000px;
@@ -507,7 +548,6 @@ img:hover {
   cursor: pointer;
   //when screen is 768px OR LESS
 }
-
 
 .project-description {
   left: -80px;

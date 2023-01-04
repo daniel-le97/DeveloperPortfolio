@@ -76,11 +76,14 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
         <div class="col-4 col-md-2" v-for="s in skillsIcons">
-          <CartoonFrame v-motion-roll-visible-once-left :delay="300">
-            <div class="v-motion">
+          <ParallaxMouse>
+  <CartoonFrame v-motion-roll-visible-once-left :delay="300">
+            <div class="">
               <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
             </div>
           </CartoonFrame>
+          </ParallaxMouse>
+        
         </div>
         <div
           class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
@@ -183,6 +186,7 @@ import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
 import CartoonFrame from "../CartoonFrame.vue";
+import ParallaxMouse from "../ParallaxMouse.vue";
 
 export default {
   props: {},
@@ -204,7 +208,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame },
+  components: { CartoonFrame, ParallaxMouse },
 };
 </script>
 

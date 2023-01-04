@@ -4,8 +4,8 @@
       <div class="section-title d-flex justify-content-between">
         <h1 v-motion-slide-visible-once-bottom :delay="300">About me</h1>
       </div>
-
-      <div class="row justify-content-center">
+<RenderObject/>
+      <div class="row justify-content-center" ref="container">
         <div class="col-md-4 d-flex justify-content-center">
           <div class="card-container">
             <div class="image-card perspective-left">
@@ -30,14 +30,17 @@
             use it as to new things and expand my knowledge, Keeping the good
             and learning from the bad. I was immeditaley captivated with web
             development upon my first
-            <b class="text-light darken-10">"Hello World!" </b> 1 year ago. I've
-            now come to build full-stack applications using a variety of
-            languages,frameworks,and tools referenced below. I have a passion
-            for everything in software development from the design aspects of
-            the frontend to the logic and puzzles of the backend both equally
-            satisfying to overcome the challenges each has. More importantly I
-            have a passion for working with people that share the same love for
-            problem-solving, and love of code!
+            <b class="text-light darken-10">"Hello World!" </b> 1 year ago. I
+            have a strong foundation in both front-end and back-end development,
+            and I am always looking for ways to expand my skillset. I am highly
+            creative and love coming up with new and innovative solutions for my
+            projects. With my love for creativity and a thirst for knowledge,
+            during my free time you can find me tinkering with new technologies
+            with my projects or learning about the latest design trends. I am a
+            problem-solver at heart and enjoy the challenge of finding creative
+            solutions to complex problems and passionate about creating
+            beautiful and functional websites that deliver an exceptional user
+            experience. "
           </p>
         </div>
       </div>
@@ -94,48 +97,60 @@
         </div>
 
         <div class="d-flex flex-wrap justify-content-around">
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/SunflowerStar.png"
-              alt=""
-              class="procreate-art perspective-right"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/SunflowerStar.png"
+                alt=""
+                class="procreate-art"
+              />
+            </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/Trex.png"
-              alt=""
-              class="procreate-art perspective-left"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/Trex.png"
+                alt=""
+                class="procreate-art"
+              />
+            </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/CosmicWolf.png"
-              alt=""
-              class="procreate-art perspective-right"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/CosmicWolf.png"
+                alt=""
+                class="procreate-art perspective-right"
+              />
+            </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/Mandala1.png"
-              alt=""
-              class="procreate-art perspective-left"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/Mandala1.png"
+                alt=""
+                class="procreate-art perspective-left"
+              />
+            </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/Mandala2.png"
-              alt=""
-              class="procreate-art perspective-right"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/Mandala2.png"
+                alt=""
+                class="procreate-art perspective-right"
+              />
+            </ParallaxMouse>
           </div>
 
-          <div v-motion-slide-visible-bottom :delay="600" class="v-motion">
-            <img
-              src="../../assets/img/Procreate/Turtle.png"
-              alt=""
-              class="procreate-art perspective-left"
-            />
+          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+            <ParallaxMouse>
+              <img
+                src="../../assets/img/Procreate/Turtle.png"
+                alt=""
+                class="procreate-art perspective-left"
+              />
+            </ParallaxMouse>
           </div>
         </div>
       </div>
@@ -145,26 +160,31 @@
 
 <script>
 import { computed } from "@vue/reactivity";
+import { useParallax } from "@vueuse/core";
 import { onMounted, ref, watchEffect } from "vue";
+import ParallaxMouse from "../ParallaxMouse.vue";
 
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
-
+    const container = ref(null);
+    const { tilt, roll, source } = useParallax(container);
     return {
       editable,
+      container,
     };
   },
+  components: { ParallaxMouse },
 };
 </script>
 
 <style lang="scss" scoped>
-.about-me-text{
+.about-me-text {
   font-size: 1.25rem;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  font-size: 1rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 }
 .procreate-art {
@@ -196,8 +216,8 @@ export default {
   margin: 15px;
   transform: rotate(-2deg);
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  height: 305px;
+  @media only screen and (max-width: 768px) {
+    height: 305px;
   }
 }
 
@@ -211,9 +231,9 @@ export default {
   background: url("https://w.wallhaven.cc/full/xl/wallhaven-xl77vl.jpg");
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     width: 240px;
-  height: 360px;
+    height: 360px;
   }
 }
 
@@ -235,14 +255,5 @@ export default {
   transform: perspective(3000px) rotateY(-5deg);
 }
 
-.v-motion {
-  transition: all 0.25s ease-out;
-  img {
-    transition: all 0.25s ease-out;
-  }
 
-  img:hover {
-    transform: rotate(8deg);
-  }
-}
 </style>

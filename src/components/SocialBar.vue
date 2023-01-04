@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid fixed-bottom d-none d-md-block">
+  <di id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
         <PhoneIcon/>
@@ -18,11 +18,11 @@
         </a>
       </div>
     </div>
-  </div>
-  <div class="container-fluid d-block d-md-none section-bubble5 py-4">
+  </di>
+  <div class="container-fluid section-bubble5 py-4 test" >
     <div class="row justify-content-center">
-      <div class="col-12 d-flex justify-content-center">
-           <PhoneIcon/>
+      <div class="col-12 d-flex justify-content-center icons">
+           <PhoneIcon />
         <GitHubIcon  />
         <LinkedInIcon  />
       </div>
@@ -47,7 +47,19 @@ export default {
   props: {},
   setup(props) {
     const editable = ref({});
-    onMounted(() => {});
+     const scrollY = ref(0);
+    onMounted(() => {
+
+        window.addEventListener("scroll", () => {
+                scrollY.value = window.scrollY;
+                console.log(scrollY.value);
+                if (scrollY.value >= 9000) {
+                 let socialBar = document.getElementById('socialBar')
+                 socialBar.classList.toggle= 'fixed-bottom'
+                 
+                }
+            });
+    });
     watchEffect(() => {});
     return {
       editable,
@@ -58,6 +70,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.icons   {
+  font-size: 10rem !important;
+}
 
 .email {
   transform: rotate(90deg) + translateX(-50px) + translateY(-20px);

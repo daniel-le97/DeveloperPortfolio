@@ -19,27 +19,28 @@ export const AppState = reactive({
   skillsIcons: [
     {
       title: "HTML5",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg",
+      src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
+      // src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg",
     },
     {
       title: "CSS3",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
+      src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
     },
     {
       title: "JavaScript ES6",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+      src: "https://www.britefish.net/wp-content/uploads/2019/06/logo-javascript-2-1024x1024.png",
     },
     {
       title: "C-Sharp",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
+      src: "https://1.bp.blogspot.com/-U8C6UaajxeA/XV1J6Yo6x2I/AAAAAAAABQo/3v2OEgTGn9ggUqArXtGZpl_6zqbo09nmACLcBGAs/s1600/csharp_logo.png",
     },
     {
       title: "Node Js",
-      src: "https://i0.wp.com/www.netgains.org/wp-content/uploads/2014/01/node_js.png?resize=249%2C287&ssl=1",
+      src: "https://walde.co/wp-content/uploads/2016/09/nodejs_logo.png",
     },
     {
       title: "Vue.js 3",
-      src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+      src: "https://coder.clothing/images/stories/virtuemart/product/vuejs-logo.png",
     },
     {
       title: "DotNet Core",
@@ -47,11 +48,11 @@ export const AppState = reactive({
     },
     {
       title: "BootStrap ",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/420px-Bootstrap_logo.svg.png",
     },
     {
       title: "TailWind CSS",
-      src: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg",
+      src: "https://media.zeemly.com/zeemly/product/tailwind-css.png",
     },
     {
       title: "Sass",
@@ -68,7 +69,7 @@ export const AppState = reactive({
     },
     {
       title: "MongoDb",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg",
+      src: "http://www.lafabriquedecode.com/blog/wp-content/uploads/2013/04/mongo_logo.png",
     },
     {
       title: "Github",
@@ -84,7 +85,7 @@ export const AppState = reactive({
     },
     {
       title: "Figma",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      src: "https://jenniferzlu.com/img/logo/figma.png",
     },
     {
       title: "FireBase",

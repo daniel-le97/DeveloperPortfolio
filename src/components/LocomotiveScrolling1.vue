@@ -1,12 +1,18 @@
 <template>
 
-<LocomotiveScrolling1/>
-  <!-- <div
+    <!-- Your section content goes here -->
+
+    
+  <div
     class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
-    <ParticleComponent />
+  <ParticleComponent />
+    <section
+    class="locomotive-section container-fluid"
+    :style="{ transform: `translateY(-${scrollY}px)` }"
+  >
     <div class="row justify-content-between w-100">
-      <div id="heroText2" class="col-md-6 hero-text-2">
+      <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
         <p
           v-motion-slide-bottom
           :delay="600"
@@ -61,71 +67,65 @@
       </div>
     </div>
    
-    <GentleWave />
-  </div> -->
+
+    <div class="row justify-content-center  position-relative">
+      <div class="col-md-6">
+        <img id="pug" src="https://i.imgur.com/DErRH7I.png" alt="" class="pug-img">
+      </div>
+    </div>
+  </section>
+  <GentleWave />
+   
+  </div>
+
 </template>
 
-<script>
-import { computed } from "@vue/reactivity";
+ 
+ <script>
 import { onMounted, ref, watchEffect } from "vue";
-import GentleWave from "../GentleWave.vue";
-import LocomotiveScrolling1 from "../LocomotiveScrolling1.vue";
-import ParticleComponent from "../ParticleComponent.vue";
+import ParticleComponent from "./ParticleComponent.vue";
 
 export default {
-  props: {},
-  setup(props) {
-    onMounted(() => {
-      // paralaxx1('heroText','heroText2');
-    });
-    const editable = ref({});
-
-    function paralaxx1(el,el2) {
-      let text1 = document.getElementById(`${el}`);
-      let text2 = document.getElementById(`${el2}`);
-      // console.log(text1);
-      let prevScrollpos = window.scrollY;
-      console.log(prevScrollpos);
-      window.onscroll = function () {
-        let currentScrollPos = window.scrollY;
-        console.log(currentScrollPos);
-        if (prevScrollpos > currentScrollPos) {
-          // text1.classList.add('test1')
-          // text1.classList.remove('test')
-          text1.style.transform = `translateY(${currentScrollPos}px)`;
-          text2.style.transform = `translateY(-${currentScrollPos}px)`;
-          // text1.style.transform = "translateY(0deg)"
-        } else {
-          // text1.classList.remove('test1')
-          // text1.classList.add('test')
-          text1.style.transform = `translateY(${currentScrollPos}px)`;
-          text2.style.transform = `translateY(-${currentScrollPos}px)`;
-        }
-
-        if (currentScrollPos > 350) {
-          // console.log('test');
-          text1.style.filter = "opacity(0)";
-        }
-
-        if (currentScrollPos < 350) {
-          text1.style.filter = "opacity(1)";
-        }
-
-        prevScrollpos = currentScrollPos;
-      };
-    }
-    return {
-      editable,
-    };
-  },
-  components: { ParticleComponent, GentleWave, LocomotiveScrolling1 },
+    name: "LocomotiveSection",
+    setup() {
+        // Create a reactive data model for the scroll position
+        const scrollY = ref(0);
+        // Add a scroll listener to update the scroll position
+        onMounted(() => {
+            window.addEventListener("scroll", () => {
+                scrollY.value = window.scrollY;
+                console.log(scrollY.value);
+                if (scrollY.value >= 530) {
+                 let pug = document.getElementById('pug')
+                 
+                 
+                }
+            });
+        });
+        // Return the scroll position to the component
+        return {
+            scrollY
+        };
+    },
+    components: { ParticleComponent }
 };
-</script>
 
-<style lang="scss" scoped>
+ </script>
+ 
+ <style lang="scss" scoped>
 
+ .pug-img{
+ position: absolute;
+ width: auto;
+ 
+ transform: translateY(450px);
+ height: 300px;
 
+ }
 
+.locomotive-section{
+  transition: transform 0.75s ease;
+}
 
 .hero-text-2 {
   transition: all 0.25s ease-out;
@@ -175,4 +175,7 @@ export default {
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed;
 }
-</style>
+
+
+ </style>
+ 
