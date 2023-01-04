@@ -1,5 +1,19 @@
 <template>
-  <HeroSection />
+
+
+     <div>
+    <!-- The opening animation page -->
+    <transition name="slide" mode="out-in" appear>
+      <div class="opening-animation" v-if="!mainLoaded">
+    <LoadingAnimation/>
+      </div>
+    </transition>
+
+    <!-- The main page -->
+    <transition name="fade" mode="out-in" appear>
+      <div class="main-page" v-if="mainLoaded">
+        <!-- Add your main page content here -->
+          <HeroSection />
   <AboutSection />
   <ExperienceSection />
   <PortfolioSection />
@@ -7,6 +21,10 @@
   <div class="position-relative"></div>
   <SocialBar />
   <!-- <EmailBar/> -->
+
+      </div>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -19,8 +37,16 @@ import ExperienceSection from "../components/section/ExperienceSection.vue";
 import SocialBar from "../components/SocialBar.vue";
 
 export default {
-  setup() {
-    return {};
+  data() {
+    return {
+      mainLoaded: false,
+    };
+  },
+  mounted() {
+    // Wait 2 seconds before loading the main page
+    setTimeout(() => {
+      this.mainLoaded = true;
+    }, 3000);
   },
   components: {
     HeroSection,
@@ -34,4 +60,41 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.opening-animation{
+  height: 100vh;
+  width: 100%;
+}
+
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s ease;
+}
+.slide-enter {
+  transform: translateY(0);
+}
+
+.slide-leave {
+  transform: translateY(-100%);
+}
+.slide-leave-to {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

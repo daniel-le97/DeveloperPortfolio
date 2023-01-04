@@ -1,5 +1,5 @@
 <template>
-  <di id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
+  <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
       <div class="col-2 d-flex flex-column align-items-start">
         <PhoneIcon/>
@@ -18,7 +18,7 @@
         </a>
       </div>
     </div>
-  </di>
+  </div>
   <div class="container-fluid section-bubble5 py-4 test" >
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center icons">
@@ -52,7 +52,7 @@ export default {
 
         window.addEventListener("scroll", () => {
                 scrollY.value = window.scrollY;
-                console.log(scrollY.value);
+             
                 if (scrollY.value >= 9000) {
                  let socialBar = document.getElementById('socialBar')
                  socialBar.classList.toggle= 'fixed-bottom'

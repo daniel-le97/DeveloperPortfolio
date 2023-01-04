@@ -492,7 +492,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.test .devsopportunities-image {
+ .devsopportunities-image {
   height: 100px;
   width: 100px;
   img {

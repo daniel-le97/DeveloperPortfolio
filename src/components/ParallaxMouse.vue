@@ -1,43 +1,3 @@
-<script setup lang="ts">
-import YAML from "js-yaml";
-import { computed, reactive, ref } from "vue";
-import type { CSSProperties } from "vue";
-import { useMediaQuery, useParallax } from "@vueuse/core";
-const target = ref(null);
-const isMobile = useMediaQuery("(max-width: 700px)");
-const parallax = reactive(useParallax(target));
-const targetStyle: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-
-  transition: ".3s ease-out all",
-};
-const cardWindowStyle: CSSProperties = {
-  display: "flex",
-
-  justifyContent: "center",
-};
-
-const containerStyle: CSSProperties = {
-  perspective: "300px",
-};
-
-const cardStyle = computed(() => ({
-  background: "transparent",
-  height: "auto",
-  width: "auto",
-  borderRadius: "5px",
-
-  overflow: "hidden",
-  transition: ".5s ease-out all",
-
-  transform: `rotateX(${parallax.roll * 20}deg) rotateY(${
-    parallax.tilt * 20
-  }deg)`,
-}));
-</script>
-
 <template>
   <div>
     <div ref="target" :style="targetStyle">
@@ -51,6 +11,46 @@ const cardStyle = computed(() => ({
     </div>
   </div>
 </template>
+
+
+
+
+<script setup lang="ts">
+
+import { computed, reactive, ref } from "vue";
+import type { CSSProperties } from "vue";
+import { useMediaQuery, useParallax } from "@vueuse/core";
+const target = ref(null);
+const isMobile = useMediaQuery("(max-width: 700px)");
+const parallax = reactive(useParallax(target));
+const targetStyle: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  transition: ".3s ease-out all",
+};
+const cardWindowStyle: CSSProperties = {
+  display: "flex",
+  justifyContent: "center",
+};
+
+const containerStyle: CSSProperties = {
+  perspective: "300px",
+};
+
+const cardStyle = computed(() => ({
+  background: "transparent",
+  height: "auto",
+  width: "auto",
+  borderRadius: "5px",
+  overflow: "hidden",
+  transition: ".5s ease-out all",
+  transform: `rotateX(${parallax.roll * 20}deg) rotateY(${
+    parallax.tilt * 20
+  }deg)`,
+}));
+</script>
+
 
 <style lang="scss" scoped>
 .box {

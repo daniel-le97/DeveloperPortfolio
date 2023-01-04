@@ -2,9 +2,8 @@
   <header>
     <Navbar class="fixed-top" id="nav" />
   </header>
-  <main><div class="anime-container">
- 
-</div>
+  <main >
+   
     <router-view />
   </main>
 </template>
@@ -18,31 +17,21 @@ export default {
   setup() {
     onMounted(() => {
       // hideOnScroll();
-    
 
-      hideOnScrollTest('#nav');
-      getAssets()
+      hideOnScrollTest("#nav");
+      getAssets();
     });
 
-
-
-function getAssets(){
-const imgs = import.meta.glob('../assets/img/portfolio')
-console.log(imgs);
-}
-
-
+    function getAssets() {
+      const imgs = import.meta.glob("../assets/img/portfolio");
+      console.log(imgs);
+    }
 
     function hideOnScrollTest(el) {
-
-
-
-
-
       let nav = document.querySelector(`${el}`);
 
       let prevScrollpos = window.scrollY;
-     
+
       // console.log(nav);
       window.onscroll = function () {
         let currentScrollPos = window.scrollY;

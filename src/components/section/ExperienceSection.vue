@@ -39,32 +39,29 @@
           ></a>
         </div>
 
-        <div class="col-md-6  align-items-center">
+        <div class="col-md-6 align-items-center">
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="font-2 text-light darken-10 fw-bold"
           >
             FULL STACK SOFTWARE DEVELOPMENT CERTIFICATION,
-         
           </p>
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="font-2 text-light fw-bold darken-20"
           >
-            2022 - Boise Codeworks,  Boise, ID
-         
+            2022 - Boise Codeworks, Boise, ID
           </p>
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
             class="font-2 text-light"
           >
-         
-             An immersive full stack software development program that
-            provided over 500 hours of coding experience across multiple
-            technology stacks.
+            An immersive full stack software development program that provided
+            over 500 hours of coding experience across multiple technology
+            stacks.
           </p>
         </div>
       </div>
@@ -75,15 +72,48 @@
         <div class="col-md-12">
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
-        <div class="col-6 col-md-2" v-for="s in skillsIcons">
-          <ParallaxMouse>
-  <CartoonFrame v-motion-roll-visible-once-left :delay="300">
-            <div class="">
-              <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
-            </div>
-          </CartoonFrame>
-          </ParallaxMouse>
-        
+
+        <div class="col-md-12">
+          <ul class="d-md-flex justify-content-between gap-5 g-5">
+            <li
+              class="list-group-item font-2 fs-3 filter-button active "
+              @click="filterImages('reset', $event)"
+            >
+              All
+            </li>
+            <li
+              class="list-group-item font-2 fs-3 filter-button"
+              @click="filterImages('lang', $event)"
+            >
+              Languages
+            </li>
+            <li
+              class="list-group-item font-2 fs-3 filter-button"
+              @click="filterImages('tech', $event)"
+            >
+              Technologies
+            </li>
+            <li
+              class="list-group-item font-2 fs-3 filter-button"
+              @click="filterImages('framework', $event)"
+            >
+              Frameworks
+            </li>
+          </ul>
+        </div>
+        <div class="image-container row g-3">
+          <div
+            class="col-6 col-md-2 image-item"
+            v-for="s in skillsIcons"
+            :type="s.type"
+            :key="s.id"
+          >
+            <ParallaxMouse>
+              <CartoonFrame v-motion-roll-visible-once-left>
+                <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
+              </CartoonFrame>
+            </ParallaxMouse>
+          </div>
         </div>
         <div
           class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
@@ -110,51 +140,51 @@
             :delay="300"
             class="font-2 text-light darken-10 fw-bold"
           >
-          2022
-         
+            2022
           </p>
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="font-2  text-light"
+            class="font-2 text-light"
           >
-            Company I Co-Founded with a team of 3 other developers from CodeWorks to do freelance work
-            while searching for full time employment.
-
-I have had the opportunity to communicate with clients to understand their needs and requirements, and to collaborate with them to ensure that their goals are met. 
-
-
-
+            Company I Co-Founded with a team of 3 other developers from
+            CodeWorks to do freelance work while searching for full time
+            employment. I have had the opportunity to communicate with clients
+            to understand their needs and requirements, and to collaborate with
+            them to ensure that their goals are met.
           </p>
 
           <ul>
-          
             <li>
-Effectively communicate technical concepts to non-technical stakeholders and to build strong working relationships.
+              Effectively communicate technical concepts to non-technical
+              stakeholders and to build strong working relationships.
             </li>
             <li>
- Proactive in seeking feedback and making adjustments as needed to ensure that the final product meets the client's expectations.
+              Proactive in seeking feedback and making adjustments as needed to
+              ensure that the final product meets the client's expectations.
             </li>
             <li>
- While I have not had a great deal of experience working directly with clients, I am eager to learn and to continue developing my skills in this area.
+              While I have not had a great deal of experience working directly
+              with clients, I am eager to learn and to continue developing my
+              skills in this area.
             </li>
             <li>
-Confident that with my strong technical abilities and my commitment to delivering high-quality work, I will be able to make a valuable contribution to any project.
+              Confident that with my strong technical abilities and my
+              commitment to delivering high-quality work, I will be able to make
+              a valuable contribution to any project.
             </li>
           </ul>
 
-           <p class="font-1 fs-5 text-light darken-10">
-              Projects & work done Listed Below
-              <i
-                @click="scrollToProjects()"
-                class="mdi mdi-arrow-down-circle fs-1 text-light action"
-              ></i>
-            </p>
+          <p class="font-1 fs-5 text-light darken-10">
+            Projects & work done Listed Below
+            <i
+              @click="scrollToProjects()"
+              class="mdi mdi-arrow-down-circle fs-1 text-light action"
+            ></i>
+          </p>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
-           
-          </div>
+          <div class="col-md-12 text-center"></div>
         </div>
       </div>
 
@@ -185,16 +215,22 @@ Confident that with my strong technical abilities and my commitment to deliverin
             :delay="300"
             class="font-2 text-light"
           >
-           
-           
-          The  <a href="https://fireship.io/">
+            The
+            <a href="https://fireship.io/">
               <img
                 src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
                 alt=""
                 width="40"
               />
               <b class="text-light darken-10"> Fireship.io's </b>
-            </a> Next.js and Firebase course is a learning opportunity that focuses on teaching developers how to use two popular technologies for building modern web applications. Next.js is a framework for building server-rendered React applications, and Firebase is a suite of tools for building and deploying applications in the cloud.The course  covers topics such as server-side rendering, authentication, data storage, and deployment, among others. 
+            </a>
+            Next.js and Firebase course is a learning opportunity that focuses
+            on teaching developers how to use two popular technologies for
+            building modern web applications. Next.js is a framework for
+            building server-rendered React applications, and Firebase is a suite
+            of tools for building and deploying applications in the cloud.The
+            course covers topics such as server-side rendering, authentication,
+            data storage, and deployment, among others.
           </p>
         </div>
       </div>
@@ -228,6 +264,58 @@ export default {
           behavior: "smooth",
         });
       },
+
+      filterImages(type, button) {
+        // Get the list of all images
+        const imageList = document.querySelectorAll(".image-item");
+        const buttonList = document.querySelectorAll(".filter-button");
+        // Remove the "active" class from all buttons
+        buttonList.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        if (type !== "reset") {
+          button.target.classList.add("active");
+        }
+        // Hide all images
+        imageList.forEach((image) => {
+          if (image.__vnode.props.type != type) {
+            image.style.display = "none";
+            image.style.opacity = 0;
+            image.style.transform = "scale(0.1)";
+          } else {
+            image.style.display = "block";
+          }
+
+          if (type == "reset") {
+            image.style.display = "block";
+          }
+        });
+
+        // Animate the "pop up" effect
+        const popDuration = 250; // 250ms
+        const targetOpacity = 1; // The final opacity of the images
+        let currentOpacity = 0; // The starting opacity of the images
+        const targetScale = 1; // The final scale of the images
+        let currentScale = 0.1; // The starting scale of the images
+
+        const popAnimation = setInterval(() => {
+          // Increment the current opacity and scale
+          currentOpacity += 0.1;
+          currentScale += 0.05;
+
+          // Update the opacity and scale of the images
+          imageList.forEach((image) => {
+            image.style.opacity = currentOpacity;
+            image.style.transform = `scale(${currentScale})`;
+          });
+
+          // Stop the animation when the target opacity and scale are reached
+          if (currentOpacity >= targetOpacity && currentScale >= targetScale) {
+            clearInterval(popAnimation);
+          }
+        }, 25); // Run the animation every 25ms
+      },
     };
   },
   components: { CartoonFrame, ParallaxMouse },
@@ -235,29 +323,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
+.active {
+  color: #ffd454 !important;
+  font-size: 2rem;
+  border-top: none !important;
+  border-bottom: #f7d778 4px solid !important;
+}
 ul {
-  counter-reset: index;  
+  counter-reset: index;
   padding: 0;
   max-width: 500px;
 }
 
 /* List element */
 li {
-  counter-increment: index; 
+  counter-increment: index;
   display: flex;
   align-items: center;
   padding: 12px 0;
   box-sizing: border-box;
   color: #f8fcdb;
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 /* Element counter */
 li::before {
-  
   content: counters(index, ".", decimal-leading-zero);
   font-size: 1.5rem;
   text-align: right;
@@ -272,15 +362,10 @@ li::before {
   -webkit-text-fill-color: transparent;
 }
 
-
 /* Element separation */
 li + li {
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-
-
-
 
 .devsopportunities-image {
   height: 200px;
@@ -296,6 +381,7 @@ li + li {
   border-color: black;
   background-position: center;
   background-size: cover;
+  transition: all 0.2s ease !important;
 }
 .box:hover {
   border: solid #f7d778;

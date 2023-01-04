@@ -1,8 +1,10 @@
 <template>
   <section id="about" class="about py-5 mt-0 section-bubble1 text-light font-1">
     <div class="container">
-      <div class="section-title d-flex justify-content-between">
-        <h1 v-motion-slide-visible-once-bottom :delay="300">About me</h1>
+      <div class="d-flex justify-content-between">
+       <div class="section-title display-3">
+         <h1 >About me</h1>
+       </div>
       </div>
 
       <div class="row justify-content-center" ref="container">
@@ -22,7 +24,7 @@
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="px-md-5 font-2 text-start about-me-text"
+            class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
             Hello! My name is Tung and I
             <b class="text-light darken-10">LOVE</b> design and creating. I
@@ -173,9 +175,27 @@ export default {
     const editable = ref({});
     const container = ref(null);
     const { tilt, roll, source } = useParallax(container);
+
+
+
+// Use an intersection observer to call the typeWriter function when the element comes into view
+
+onMounted(()=>{
+
+})
+
+watchEffect(()=>{
+
+
+})
+
+
+
+    
     return {
       editable,
       container,
+     
     };
   },
   components: { ParallaxMouse },

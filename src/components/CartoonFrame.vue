@@ -56,14 +56,6 @@ export default {
  
 }
 
-.perspective-left {
-  transform: perspective(1500px) rotateY(30deg);
-  transition: transform 1s ease 0s;
-}
-
-.perspective-left:hover {
-  transform: perspective(3000px) rotateY(-10deg);
-}
 
 .card-container{
   

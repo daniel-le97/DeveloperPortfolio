@@ -93,18 +93,10 @@ export default {
         // Add a scroll listener to update the scroll position
         onMounted(() => {
             window.addEventListener("scroll", () => {
-              let pug = document.getElementById('pug')
+          
                 scrollY.value = window.scrollY;
-                // console.log(scrollY.value);
-                if (scrollY.value >=500) {
-                  // console.log(pug)
-                //  pug.style.transform = `translateY(${scrollY.value}px)`
-                 
-                pug.style.opacity=0
-                }
-                else {
-                    pug.style.opacity=1
-                }
+               
+            
             });
         });
         // Return the scroll position to the component
