@@ -75,7 +75,7 @@
         <div class="col-md-12">
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
-        <div class="col-4 col-md-2" v-for="s in skillsIcons">
+        <div class="col-6 col-md-2" v-for="s in skillsIcons">
           <ParallaxMouse>
   <CartoonFrame v-motion-roll-visible-once-left :delay="300">
             <div class="">
@@ -120,7 +120,29 @@
           >
             Company I Co-Founded with a team of 3 other developers from CodeWorks to do freelance work
             while searching for full time employment.
+
+I have had the opportunity to communicate with clients to understand their needs and requirements, and to collaborate with them to ensure that their goals are met. 
+
+
+
           </p>
+
+          <ul>
+          
+            <li>
+Effectively communicate technical concepts to non-technical stakeholders and to build strong working relationships.
+            </li>
+            <li>
+ Proactive in seeking feedback and making adjustments as needed to ensure that the final product meets the client's expectations.
+            </li>
+            <li>
+ While I have not had a great deal of experience working directly with clients, I am eager to learn and to continue developing my skills in this area.
+            </li>
+            <li>
+Confident that with my strong technical abilities and my commitment to delivering high-quality work, I will be able to make a valuable contribution to any project.
+            </li>
+          </ul>
+
            <p class="font-1 fs-5 text-light darken-10">
               Projects & work done Listed Below
               <i
@@ -161,18 +183,18 @@
           <p
             v-motion-slide-visible-once-bottom
             :delay="300"
-            class="font-2 fs-4 text-light"
+            class="font-2 text-light"
           >
-            learning the fundamentals of react and the Next.js framework through
-            <a href="https://fireship.io/">
+           
+           
+          The  <a href="https://fireship.io/">
               <img
                 src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
                 alt=""
                 width="40"
               />
-              <b class="text-light darken-10"> fireship.io's </b>
-            </a>
-            course. Utilizing React hooks and Firebase file upload and storage.
+              <b class="text-light darken-10"> Fireship.io's </b>
+            </a> Next.js and Firebase course is a learning opportunity that focuses on teaching developers how to use two popular technologies for building modern web applications. Next.js is a framework for building server-rendered React applications, and Firebase is a suite of tools for building and deploying applications in the cloud.The course  covers topics such as server-side rendering, authentication, data storage, and deployment, among others. 
           </p>
         </div>
       </div>
@@ -213,13 +235,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fireship-img {
-  //when screen is 768px OR LESS
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-    width: 75%;
-  }
+
+
+ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 500px;
 }
+
+/* List element */
+li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+  color: #f8fcdb;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Element counter */
+li::before {
+  
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+
+
+
 .devsopportunities-image {
   height: 200px;
   width: 200px;

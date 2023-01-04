@@ -68,11 +68,11 @@
     </div>
    
 
-    <div class="row justify-content-center  position-relative">
+    <!-- <div class="row justify-content-center  position-relative">
       <div class="col-md-6">
         <img id="pug" src="https://i.imgur.com/DErRH7I.png" alt="" class="pug-img">
       </div>
-    </div>
+    </div> -->
   </section>
   <GentleWave />
    
@@ -93,12 +93,17 @@ export default {
         // Add a scroll listener to update the scroll position
         onMounted(() => {
             window.addEventListener("scroll", () => {
+              let pug = document.getElementById('pug')
                 scrollY.value = window.scrollY;
-                console.log(scrollY.value);
-                if (scrollY.value >= 530) {
-                 let pug = document.getElementById('pug')
+                // console.log(scrollY.value);
+                if (scrollY.value >=500) {
+                  // console.log(pug)
+                //  pug.style.transform = `translateY(${scrollY.value}px)`
                  
-                 
+                pug.style.opacity=0
+                }
+                else {
+                    pug.style.opacity=1
                 }
             });
         });

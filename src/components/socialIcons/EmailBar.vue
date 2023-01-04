@@ -11,18 +11,13 @@
 <script>
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../AppState.js";
-import { logger } from "../utils/Logger.js";
-import Pop from "../utils/Pop.js";
 
 export default {
-  props: {},
-  setup(props) {
-    const editable = ref({});
 
-    onMounted(() => {});
-    watchEffect(() => {});
+  setup() {
+  
 
+ 
     return {
       editable,
     };
@@ -39,11 +34,5 @@ export default {
   margin: 0px auto;
   background-color: #fff;
 }
-i {
-  transition: all 0.5s ease-out-out;
-}
-i:hover {
-  transform: translateY(-5px);
-  color: turquoise !important;
-}
+
 </style>

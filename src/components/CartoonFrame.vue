@@ -1,6 +1,6 @@
 <template>
   <div class="card-container">
-    <div class="image-card perspective-left">
+    <div class="image-card ">
       <slot> </slot>
 
     </div>
@@ -67,7 +67,7 @@ export default {
 
 .card-container{
   
-  transition: all 0.5s ease-out;
+  
     border-radius: 16px;
  
 }

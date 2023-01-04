@@ -4,7 +4,7 @@
       <div class="section-title d-flex justify-content-between">
         <h1 v-motion-slide-visible-once-bottom :delay="300">About me</h1>
       </div>
-<RenderObject/>
+
       <div class="row justify-content-center" ref="container">
         <div class="col-md-4 d-flex justify-content-center">
           <div class="card-container">
@@ -88,11 +88,14 @@
         <div class="col-md-12">
           <p class="font-1 fs-4 text-warning">Some of my artwork</p>
           <p class="font-2 fs-5 text-light text-center">
-            I love drawing mandalas as a way of relaxation and creative
-            meditation. Procreate is one of my favorite digital mediums of
-            creating art. Since being caught by the web developer bug I've been
-            able to combine my love for art with developing beautiful and
-            creative front-end applications and design styles.
+            I love drawing mandalas as a way of relaxation and creative outlet
+            that allows me to express myself and explore new ideas. Having a
+            background in art as helped me develop valuable skills such as
+            attention to detail, problem-solving, and the ability to visualize
+            and communicate solutions to complex problems and to communicate
+            more effectively with colleagues and clients. Finally, My artwork is
+            a source of personal satisfaction and pride, which aids me to
+            maintaining motivation and a positive outlook in my career and life.
           </p>
         </div>
 
@@ -254,6 +257,4 @@ export default {
 .perspective-right:hover {
   transform: perspective(3000px) rotateY(-5deg);
 }
-
-
 </style>

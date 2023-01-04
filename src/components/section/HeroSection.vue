@@ -76,46 +76,13 @@ export default {
   props: {},
   setup(props) {
     onMounted(() => {
-      // paralaxx1('heroText','heroText2');
+   
     });
-    const editable = ref({});
+   
 
-    function paralaxx1(el,el2) {
-      let text1 = document.getElementById(`${el}`);
-      let text2 = document.getElementById(`${el2}`);
-      // console.log(text1);
-      let prevScrollpos = window.scrollY;
-      console.log(prevScrollpos);
-      window.onscroll = function () {
-        let currentScrollPos = window.scrollY;
-        console.log(currentScrollPos);
-        if (prevScrollpos > currentScrollPos) {
-          // text1.classList.add('test1')
-          // text1.classList.remove('test')
-          text1.style.transform = `translateY(${currentScrollPos}px)`;
-          text2.style.transform = `translateY(-${currentScrollPos}px)`;
-          // text1.style.transform = "translateY(0deg)"
-        } else {
-          // text1.classList.remove('test1')
-          // text1.classList.add('test')
-          text1.style.transform = `translateY(${currentScrollPos}px)`;
-          text2.style.transform = `translateY(-${currentScrollPos}px)`;
-        }
-
-        if (currentScrollPos > 350) {
-          // console.log('test');
-          text1.style.filter = "opacity(0)";
-        }
-
-        if (currentScrollPos < 350) {
-          text1.style.filter = "opacity(1)";
-        }
-
-        prevScrollpos = currentScrollPos;
-      };
-    }
+  
     return {
-      editable,
+
     };
   },
   components: { ParticleComponent, GentleWave, LocomotiveScrolling1 },

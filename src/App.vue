@@ -21,8 +21,24 @@ export default {
     
 
       hideOnScrollTest('#nav');
+      getAssets()
     });
+
+
+
+function getAssets(){
+const imgs = import.meta.glob('../assets/img/portfolio')
+console.log(imgs);
+}
+
+
+
     function hideOnScrollTest(el) {
+
+
+
+
+
       let nav = document.querySelector(`${el}`);
 
       let prevScrollpos = window.scrollY;

@@ -100,24 +100,27 @@ export const AppState = reactive({
   devProjects: [
     {
       title: `SamadhiYogaIdaho`,
-      description: "Check out Below",
+      description: "Details listed Above",
       tech: [],
-      githubLink: "",
+
       externalLink: "",
+      img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418073993226/samadhiApp.png",
     },
     {
       title: `RCMF`,
       description: "Randy Carpenter Memorial Foundation website.",
       tech: ["Vue", "BootStrap"],
-      githubLink: "",
+
       externalLink: "",
+      img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060068162185465917/rcmfApp.png",
     },
     {
       title: ` SoftBall Website`,
       description: "Website for Centennial HighSchool's Softball team ",
       tech: ["Vue", "BootStrap"],
-      githubLink: "",
+
       externalLink: "",
+      img: "",
     },
   ],
 
@@ -129,6 +132,7 @@ export const AppState = reactive({
       tech: ["Node Js", "Vue", "BootStrap"],
       githubLink: "",
       externalLink: "https://tungle0319.github.io/TaskMaster/",
+      img: "assets/img/portfolio/TowerSS.png",
     },
 
     {
@@ -138,31 +142,7 @@ export const AppState = reactive({
       tech: ["Node Js", "Vue", "BootStrap", "Auth0"],
       githubLink: "",
       externalLink: "https://thetower-f4he.onrender.com",
-    },
-    {
-      title: `Net Work`,
-      description:
-        "SPA app,  an client interface that utilizes a social networking API. Demonstrating knowledge of the VueJS framework, creating an  utilizing Vue and Vue-Router, creating searches to the API utilizing query parameters, and working with Auth0 for identity management",
-      tech: ["Node Js", "Vue", "BootStrap"],
-      githubLink: "",
-      externalLink: "",
-    },
-    {
-      title: `Inspire`,
-      description:
-        "Inspiration is a gift, The Inspire application allows users to keep track of daily tasks and the weather with the help of a randomly generated quote and beautiful background image scenery",
-      tech: ["Node Js", "Vue", "BootStrap"],
-      githubLink: "",
-      externalLink: "",
-    },
-
-    {
-      title: `I'm Game`,
-      description:
-        "Single page application to search and browse board games using Board Game Atlas's API ",
-      tech: ["Node Js", "Vue", "BootStrap", "MongoDb"],
-      githubLink: "",
-      externalLink: "",
+      img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418464075877/TowerSS.png",
     },
 
     {
@@ -172,6 +152,21 @@ export const AppState = reactive({
       tech: ["HTML", "JavaScript", "BootStrap"],
       githubLink: "",
       externalLink: "https://tungle0319.github.io/DimensionMiner/",
+      img: "assets/img/portfolio/TowerSS.png",
+    },
+  ],
+
+  featuredProjects: [
+    {
+      title: `SamadhiYogaIdaho`,
+      description:
+        "Custom Designed and built website for a small yoga business owner client. The app will allow users to easily browse and sign up for classes, view class schedules, and purchase memberships and packages. It will also include a feature for teachers to manage their schedules and events, to manage customer information and Integrated Ghost for CMS blog publishing feature. The SPA will be optimized for both desktop and mobile use, making it convenient for users to access from any device. Overall, the goal of the app is to provide a seamless and convenient experience for both the business and its customers.",
+      tech: ["Vue", "BootStrap"],
+
+      externalLink: "https://www.samadhiyogaidaho.com/#/",
+      img: "https://cdn.discordapp.com/attachments/1060066788878069891/1060067418073993226/samadhiApp.png",
     },
   ],
 });
+
+

@@ -4,7 +4,7 @@
       <div class="section-title d-flex">
         <h1 class="font-1 text-light">Portfolio</h1>
       </div>
-<!-- SECTION SAMADHIYOGAIDAHO -->
+      <!-- SECTION SAMADHIYOGAIDAHO -->
 
       <div class="row my-5">
         <div class="col-md-7">
@@ -14,7 +14,7 @@
               :delay="500"
               src="../../assets/img/portfolio/samadhiApp.png"
               class="img-fluid elevation-6 rounded"
-              alt=""
+              alt="Project Image"
             />
           </a>
         </div>
@@ -22,7 +22,7 @@
           <p
             v-motion-slide-visible-bottom
             :delay="500"
-            class="font-1 fs-5 text-warning"
+            class="font-1 fs-5 text-warning mt-3 mt-md-0"
           >
             Featured Project
           </p>
@@ -98,14 +98,14 @@
       </div>
 
       <!-- !SECTION SAMADHIYOGAIDAHO -->
-<!-- SECTION BETTER AFTER BOOKS -->
+      <!-- SECTION BETTER AFTER BOOKS -->
 
       <div class="row my-6" style="">
         <div class="col-md-5 position-relative text-end">
           <p
             v-motion-slide-visible-bottom
             :delay="500"
-            class="font-1 fs-5 text-warning"
+            class="font-1 fs-5 text-warning mt-3 mt-md-0"
           >
             Featured Project
           </p>
@@ -119,7 +119,7 @@
           <div
             v-motion-slide-visible-bottom
             :delay="700"
-            class="card elevation-6 p-2 border-0 bg-primary text-light position-absolute project-description-flip w-100"
+            class="card elevation-6 p-2 border-0 bg-primary text-light  project-description-flip w-100"
             style="z-index: 9"
           >
             <div
@@ -178,7 +178,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-12 col-md-7">
           <a
             href="https://betterafterbooks.apps.devopportunities.dev/"
             target="_blank"
@@ -188,99 +188,175 @@
               :delay="500"
               src="../../assets/img/portfolio/BetterAfterBooks.png"
               class="img-fluid elevation-5 rounded"
-              alt=""
+              alt="Project Image"
             />
           </a>
         </div>
       </div>
       <!-- !SECTION BETTER AFTER BOOKS -->
-<!-- SECTION Keepr -->
-<div class="row my-5">
-  <div class="col-md-7">
-    <a 
-    target="_blank"
-    href="https://keepr-project-demo.onrender.com">
-    <img
-    v-motion-slide-visible-bottom
-    :delay="500"
-    src="../../assets/img/portfolio/KeeprSS.png"
-    class="img-fluid elevation-6 rounded"
-    alt=""
-    />
-  </a>
-</div>
-<div class="col-md-5 position-relative">
-  <p
-  v-motion-slide-visible-bottom
-  :delay="500"
-  class="font-1 fs-5 text-warning"
-  >
-  Featured Project
-</p>
-<p
-v-motion-slide-visible-bottom
-:delay="600"
-class="font-1 fs-3 text-light text-shadow"
->
-Keepr
-</p>
-<div
-v-motion-slide-visible-bottom
-:delay="700"
-class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
->
-<div
-v-motion-slide-visible-bottom
-:delay="800"
-class="card-body font-2"
->
-Keepr is a social network that allows users to visually share and
-discover new interests by posting images or videos to their own,
-or others', collections (i.e., a collection of 'vaults,' usually
-with a common theme) and browsing what other users have kept.
-Demonstrates a working knowledge of building full-stack
-applications. Utilizing a VueJs frontend with Vue-Router to manage
-the DOM. On the server-side, using DotNet WebApi for their server
-and implement the Repository pattern to communicate with their
-database. In addition, Auth0 for user management, Dapper as an
-ORM, and a MySQL server for their database.
-</div>
+      <!-- SECTION Keepr -->
+      <div class="row my-5">
+        <div class="col-md-7">
+          <a target="_blank" href="https://keepr-project-demo.onrender.com">
+            <img
+              v-motion-slide-visible-bottom
+              :delay="500"
+              src="../../assets/img/portfolio/KeeprSS.png"
+              class="img-fluid elevation-6 rounded"
+              alt="Project Image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5 position-relative">
+          <p
+            v-motion-slide-visible-bottom
+            :delay="500"
+            class="font-1 fs-5 text-warning mt-3 mt-md-0"
+          >
+            Featured Project
+          </p>
+          <p
+            v-motion-slide-visible-bottom
+            :delay="600"
+            class="font-1 fs-3 text-light text-shadow"
+          >
+            Keepr
+          </p>
+          <div
+            v-motion-slide-visible-bottom
+            :delay="700"
+            class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
+          >
+            <div
+              v-motion-slide-visible-bottom
+              :delay="800"
+              class="card-body font-2"
+            >
+              Keepr is a social network that allows users to visually share and
+              discover new interests by posting images or videos to their own,
+              or others', collections (i.e., a collection of 'vaults,' usually
+              with a common theme) and browsing what other users have kept.
+              Demonstrates a working knowledge of building full-stack
+              applications. Utilizing a VueJs frontend with Vue-Router to manage
+              the DOM. On the server-side, using DotNet WebApi for their server
+              and implement the Repository pattern to communicate with their
+              database. In addition, Auth0 for user management, Dapper as an
+              ORM, and a MySQL server for their database.
+            </div>
 
-<ul class="list-group list-group-horizontal bg-transparent">
-  <li
-  v-motion-slide-visible-bottom
-  :delay="300"
-  class="list-group-item"
-  >
-  HTML
-</li>
-<li
-v-motion-slide-visible-bottom
-:delay="300"
-class="list-group-item"
->
-CSS
-</li>
-<li
-v-motion-slide-visible-bottom
-:delay="300"
-class="list-group-item"
->
-Javascript
-</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- !SECTION Keepr -->
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                HTML
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                CSS
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Javascript
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- !SECTION Keepr -->
 
+      <!-- SECTION Tower -->
+      <div class="row my-6" style="">
+        <div class="col-md-5 position-relative text-end">
+          <p
+            v-motion-slide-visible-bottom
+            :delay="500"
+            class="font-1 fs-5 text-warning mt-3 mt-md-0"
+          >
+            Featured Project
+          </p>
+          <p
+            v-motion-slide-visible-bottom
+            :delay="600"
+            class="font-1 fs-3 text-light text-shadow"
+          >
+            Tower
+          </p>
+          <div
+            v-motion-slide-visible-bottom
+            :delay="700"
+            class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
+            style="z-index: 9"
+          >
+            <div
+              v-motion-slide-visible-bottom
+              :delay="800"
+              class="card-body text-start font-2"
+            >
+              SPA app designed to help people get together with other users for
+              events as well as create them. VueJs with Vue-Router for the
+              client. Express with Node.js and MongoDB with Mongoose to manage
+              database and handling relationships of both one to many, and many
+              to many objects. Identity management with Auth0.
+            </div>
 
-
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Vue.Js
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Node.Js & Express
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                BootStrap
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                MongoDb
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <a href="https://thetower-f4he.onrender.com" target="_blank">
+            <img
+              v-motion-slide-visible-bottom
+              :delay="500"
+              src="https://cdn.discordapp.com/attachments/1060066788878069891/1060067418464075877/TowerSS.png"
+              class="img-fluid elevation-5 rounded"
+              alt="Project Image"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- !SECTION Tower -->
     </div>
 
     <div class="container" style="margin-top: 20rem">
       <!-- SECTION ArchivedProjects -->
-      <div class="row g-3">
+      <!-- <div class="row g-3">
         <div class="col-md-12 text-center">
           <p class="font-1 fs-2 text-warning">Other Noteworthy Projects</p>
           <p class="font-2 text-light darken-10">
@@ -362,9 +438,9 @@ Javascript
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- !SECTION ArchivedProjects -->
-     <!-- SECTION LLC PROJECTS -->
+      <!-- SECTION LLC PROJECTS -->
       <div id="devProjects" class="row g-3 my-5">
         <div
           class="col-md-12 text-center d-flex align-items-center justify-content-center"
@@ -379,66 +455,11 @@ Javascript
           </p>
         </div>
 
-        <div class="col-md-4" v-for="a in devProjects">
-          <div
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="card elevation-6 border-0 p-2 bg-primary archived-project-card"
-          >
-            <div class="d-flex justify-content-between">
-              <i
-                v-motion-slide-visible-once-bottom
-                :delay="400"
-                class="mdi mdi-folder fs-3 text-warning"
-              ></i>
-              <div class="d-flex align-items-center">
-                <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
-                <a
-                  v-motion-slide-visible-once-bottom
-                  :delay="600"
-                  href=""
-                  class="ms-3"
-                >
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/5873/5873833.png"
-                    alt="External Link to Webpage"
-                    width="30"
-                    height="30"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="">
-              <p
-                v-motion-slide-visible-once-bottom
-                :delay="700"
-                class="fs-3 font-1"
-              >
-                {{ a.title }}
-              </p>
-              <p
-                v-motion-slide-visible-once-bottom
-                :delay="900"
-                class="text-light font-2"
-              >
-                {{ a.description }}
-              </p>
-            </div>
-            <div class="">
-              <ul class="list-group list-group-horizontal">
-                <li
-                  class="list-group-item text-light darken-10 bg-transparent border-0"
-                  v-for="t in a.tech"
-                >
-                  {{ t }}
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div @mouseenter="test" class="col-md-6 test" v-for="d in devProjects">
+          <ProjectCard :project="d" />
         </div>
       </div>
-     <!-- !SECTION LLC PROJECTS -->
+      <!-- !SECTION LLC PROJECTS -->
     </div>
   </section>
 </template>
@@ -447,8 +468,8 @@ Javascript
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
-import GitHubIcon from "../GitHubIcon.vue";
-
+import GitHubIcon from "../socialIcons/GitHubIcon.vue";
+import ProjectCard from "../ProjectCard.vue";
 export default {
   props: {},
   setup(props) {
@@ -461,6 +482,9 @@ export default {
       projects: computed(() => AppState.portfolioImages),
       archivedProjects: computed(() => AppState.archivedProjects),
       devProjects: computed(() => AppState.devProjects),
+      test() {
+        console.log("hi");
+      },
     };
   },
   components: { GitHubIcon },
@@ -468,7 +492,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.devsopportunities-image {
+.test .devsopportunities-image {
   height: 100px;
   width: 100px;
   img {
@@ -529,9 +553,16 @@ export default {
   cursor: pointer;
 }
 .my-6 {
-  margin-top: 8rem;
+  margin-top: 17rem;
   margin-bottom: 15rem;
 }
+
+ul {
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+
 img {
   transition: all 0.5s ease-out;
 
@@ -554,13 +585,18 @@ img:hover {
   position: absolute;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    left: 0;
-    top: -200px;
+    position: static;
     background-color: rgba(27, 82, 95, 0.534) !important;
     backdrop-filter: blur(1px);
   }
 }
 .project-description-flip {
+  position: absolute;
   left: 80px;
+  @media only screen and (max-width: 768px) {
+    position: static;
+    background-color: rgba(27, 82, 95, 0.534) !important;
+    backdrop-filter: blur(1px);
+  }
 }
 </style>
