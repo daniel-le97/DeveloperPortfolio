@@ -2,10 +2,12 @@
   "name": "cw-vue-template",
   "version": "0.1.2",
   "private": true,
+  "homepage": "https://daniel-le97.github.io/DeveloperPortfolio/",
   "scripts": {
     "serve": "vite",
     "build": "vite build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@bcwdev/auth0provider-client": "0.0.13",
@@ -31,6 +33,7 @@
     "eslint": "8.24.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-vue": "9.5.1",
+    "gh-pages": "^4.0.0",
     "sass": "1.54.5",
     "vite": "3.1.3"
   }
